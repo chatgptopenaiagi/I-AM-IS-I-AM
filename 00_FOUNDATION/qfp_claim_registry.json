@@ -1,0 +1,127 @@
+{
+  "protocol_version": "2.0",
+  "registry_scope": "Selected active canonical QFP scientific objects; not an exhaustive claim catalogue.",
+  "objects": [
+    {
+      "id": "QFP-M001",
+      "name": "Scalar-tensor-Gauss-Bonnet protected working action",
+      "object_type": "WORKING MODEL",
+      "domain": ["LOCAL"],
+      "depends_on": ["QFP-C001"],
+      "expression": "S = integral d^4x sqrt(-g) [F(Phi) R - 1/2 grad(Phi).grad(Phi) - V(Phi) + alpha H(Phi) G]",
+      "provenance": ["AGENTS.md", "02_MATHEMATICS/Conventions_and_Notation.md"]
+    },
+    {
+      "id": "QFP-A001",
+      "name": "Independence of F(Phi) and H(Phi)",
+      "object_type": "ASSUMPTION",
+      "domain": ["LOCAL", "GLOBAL"],
+      "depends_on": [],
+      "provenance": ["AGENTS.md", "02_MATHEMATICS/Conventions_and_Notation.md"]
+    },
+    {
+      "id": "QFP-C001",
+      "name": "Canonical curvature convention and definitions",
+      "object_type": "DEFINITION",
+      "domain": ["LOCAL", "GLOBAL", "COORDINATE-PATCH"],
+      "depends_on": [],
+      "provenance": ["02_MATHEMATICS/Conventions_and_Notation.md"]
+    },
+    {
+      "id": "QFP-NOT001",
+      "name": "Scalar d'Alembertian notation",
+      "object_type": "NOTATION",
+      "domain": ["LOCAL", "GLOBAL"],
+      "depends_on": [],
+      "expression": "Box Phi = nabla_mu nabla^mu Phi = g^(mu nu) nabla_mu nabla_nu Phi",
+      "provenance": ["02_MATHEMATICS/Conventions_and_Notation.md"]
+    },
+    {
+      "id": "QFP-A002",
+      "name": "Static spherical metric ansatz",
+      "object_type": "ANSATZ",
+      "domain": ["COORDINATE-PATCH", "STATIC-SPHERICAL"],
+      "depends_on": [],
+      "expression": "ds^2 = -e^(2 delta(r)) N(r) dt^2 + dr^2/N(r) + r^2 dOmega^2",
+      "provenance": ["AGENTS.md", "02_MATHEMATICS/Conventions_and_Notation.md"]
+    },
+    {
+      "id": "QFP-DEF001",
+      "name": "Mass-function definition",
+      "object_type": "DEFINITION",
+      "domain": ["COORDINATE-PATCH", "STATIC-SPHERICAL"],
+      "depends_on": [],
+      "expression": "N(r) = 1 - 2 m(r)/r",
+      "provenance": ["AGENTS.md", "02_MATHEMATICS/Conventions_and_Notation.md"]
+    },
+    {
+      "id": "QFP-A003",
+      "name": "Regular-center expansion ansatz",
+      "object_type": "ANSATZ",
+      "domain": ["LOCAL", "REGULAR-CENTER"],
+      "depends_on": ["QFP-A002", "QFP-DEF001"],
+      "expansion": ["m(r) = m3 r^3 + O(r^5)", "delta(r) = delta0 + delta2 r^2 + O(r^4)", "Phi(r) = Phi0 + Phi2 r^2 + O(r^4)"],
+      "provenance": ["AGENTS.md", "02_MATHEMATICS/Conventions_and_Notation.md"]
+    },
+    {
+      "id": "QFP-D001",
+      "name": "Covariant scalar Euler-Lagrange equation",
+      "epistemic_status": "DERIVED",
+      "domain": ["LOCAL"],
+      "depends_on": ["QFP-M001", "QFP-C001", "QFP-NOT001"],
+      "expression": "Box Phi + F'(Phi) R - V'(Phi) + alpha H'(Phi) G = 0",
+      "validation": [{"method": "ANALYTIC DERIVATION", "role": "PRIMARY"}, {"method": "DIMENSIONAL CHECK", "outcome": "PASS"}, {"method": "LIMITING-CASE TEST", "outcome": "PASS"}],
+      "provenance": ["02_MATHEMATICS/derivations/Scalar_Euler_Lagrange_Derivation.md", "12_VALIDATION/limiting_cases/Scalar_Equation_Validation.md"]
+    },
+    {
+      "id": "QFP-D002",
+      "name": "Regular-center scalar d'Alembertian",
+      "epistemic_status": "DERIVED",
+      "domain": ["LOCAL", "REGULAR-CENTER"],
+      "depends_on": ["QFP-A003", "QFP-NOT001"],
+      "expression": "Box Phi(0) = 6 Phi2",
+      "validation": [{"method": "ANALYTIC DERIVATION", "role": "PRIMARY"}, {"method": "SYMBOLIC COMPUTATION", "role": "INDEPENDENT CROSS-CHECK", "outcome": "PASS"}],
+      "provenance": ["02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md", "12_VALIDATION/regularity/Scalar_Regular_Center_Test.md"]
+    },
+    {
+      "id": "QFP-D003",
+      "name": "Regular-center Ricci scalar",
+      "epistemic_status": "DERIVED",
+      "domain": ["LOCAL", "REGULAR-CENTER"],
+      "depends_on": ["QFP-A003", "QFP-C001"],
+      "expression": "R(0) = 24 m3 - 12 delta2",
+      "validation": [{"method": "ANALYTIC DERIVATION", "role": "PRIMARY"}, {"method": "SYMBOLIC COMPUTATION", "role": "INDEPENDENT CROSS-CHECK", "outcome": "PASS"}, {"method": "LIMITING-CASE TEST", "case": "DE SITTER", "outcome": "PASS"}],
+      "provenance": ["02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md", "12_VALIDATION/regularity/Scalar_Regular_Center_Test.md"]
+    },
+    {
+      "id": "QFP-D004",
+      "name": "Regular-center Gauss-Bonnet invariant",
+      "epistemic_status": "DERIVED",
+      "domain": ["LOCAL", "REGULAR-CENTER"],
+      "depends_on": ["QFP-A003", "QFP-C001"],
+      "expression": "G(0) = 96 m3 (m3 - delta2)",
+      "validation": [{"method": "ANALYTIC DERIVATION", "role": "PRIMARY"}, {"method": "SYMBOLIC COMPUTATION", "role": "INDEPENDENT CROSS-CHECK", "outcome": "PASS"}, {"method": "LIMITING-CASE TEST", "case": "DE SITTER", "outcome": "PASS"}],
+      "provenance": ["02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md", "12_VALIDATION/regularity/Scalar_Regular_Center_Test.md"]
+    },
+    {
+      "id": "QFP-D005",
+      "name": "Central scalar relation",
+      "epistemic_status": "DERIVED",
+      "domain": ["LOCAL", "REGULAR-CENTER"],
+      "depends_on": ["QFP-D001", "QFP-D002", "QFP-D003", "QFP-D004"],
+      "expression": "6 Phi2 - V'(Phi0) + (24 m3 - 12 delta2) F'(Phi0) + 96 alpha m3 (m3 - delta2) H'(Phi0) = 0",
+      "validation": [{"method": "ANALYTIC DERIVATION", "role": "PRIMARY"}, {"method": "DIMENSIONAL CHECK", "outcome": "PASS"}, {"method": "INDEPENDENT AUDIT", "outcome": "EXACT MATCH"}],
+      "provenance": ["02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md", "12_VALIDATION/regularity/Scalar_Regular_Center_Test.md", "11_RESEARCH_LOG/2026/2026-08-09_center-relations-promoted-to-derived.md"]
+    },
+    {
+      "id": "QFP-S001",
+      "name": "Continuum-Projection ontology",
+      "object_type": "SCHEMA",
+      "domain": [],
+      "depends_on": [],
+      "presentation_qualifier": "SCHEMATIC",
+      "expression": "C -> Sigma; C_4D -> Sigma_3D; Observer in Sigma",
+      "provenance": ["AGENTS.md", "README.md"]
+    }
+  ]
+}

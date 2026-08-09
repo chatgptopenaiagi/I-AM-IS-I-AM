@@ -44,6 +44,16 @@ Directory descriptions, workflow instructions, and clearly identified questions 
 
 Object type and epistemic status are different axes: the first identifies what an item is within the research record, while the second evaluates what is claimed about its validity or support.
 
+## QFP Epistemic Protocol v2
+
+`00_FOUNDATION/QFP_Epistemic_Protocol_v2.md` and `00_FOUNDATION/qfp_claim_registry.json` define the prospective five-axis record for new major scientific objects and for active canonical objects deliberately migrated to it. The axes are: scientific object type, epistemic status, domain/scope, explicit dependencies, and validation/computational metadata. The original object-type and epistemic-status vocabularies remain distinct and unchanged.
+
+Assign a stable registry ID to each new major scientific object, state its domain and truncation or expansion order where applicable, use `Depends-On` IDs for registered dependencies, and record only validation metadata supported by an actual method or computation. A dependency change marks downstream objects `RE-AUDIT REQUIRED` for impact review; it does not by itself make them `FALSIFIED` or `SUPERSEDED` and does not alter their recorded epistemic status.
+
+Symbolic algebra is normally `Method: SYMBOLIC COMPUTATION`, not `Epistemic Status: NUMERICAL RESULT`. Finite numerical computations may carry `NUMERICAL RESULT`, with numerical role, convergence, error characterization, independent-check, reproducibility, solver, precision, tolerance, grid, domain, and boundary-condition fields populated only when supported by the run record.
+
+Existing historical records remain valid and need not be mass-rewritten. Protocol v2 applies prospectively and when an active canonical object is deliberately migrated. Stable IDs are independent of paths and must not be reassigned when files move; retired records retain their IDs and history.
+
 ## Scientific record
 
 Do not change a foundational QFP definition merely because another formulation is more conventional. If a formulation appears wrong or inconsistent:
