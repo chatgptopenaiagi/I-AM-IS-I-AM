@@ -176,26 +176,28 @@ m(r)=m_3r^3+O(r^5),
 
 For fields smooth at the origin in local Cartesian coordinates and invariant under spatial rotations, scalar functions of position are smooth functions of \(r^2\), motivating even powers for \(\delta\) and \(\Phi\) and excluding singular terms and linear terms. Since \(N=1-2m/r\), a locally regular center with \(N=1+O(r^2)\) requires \(m=O(r^3)\); the displayed odd-power series is compatible with a smooth even-power expansion of \(m(r)/r^3\). These are local smoothness assumptions built into the ansatz. At least sufficient \(C^2\) regularity is required for the classical local field equations; \(C^4\) is the working smoothness class for regular-center series, symbolic curvature calculations, and the initial numerical program unless a later analysis proves weaker regularity sufficient. The \(C^4\) choice is a working mathematical convention, not a physical law. The expansion does not prove that a solution exists, that field equations enforce the coefficients, that curvature invariants remain finite beyond the retained order, or that the spacetime is globally regular.
 
-## 8. Existing conjectural relations
+## 8. Derived local center relations
 
-**Status: CONJECTURE.** Preserve the current central Gauss-Bonnet expression
+**Status: DERIVED.** Within the adopted static spherical regular-center expansion and canonical curvature convention, preserve the central Gauss-Bonnet expression
 
 \[
 \mathcal G(0)=96m_3(m_3-\delta_2).
 \]
 
-**Status: CONJECTURE.** Preserve the associated de Sitter substitution
+Preserve the associated de Sitter substitution used as a consistency check:
 
 \[
 \delta_2=0,\qquad m_3=\frac{\Lambda}{6},
 \qquad \mathcal G(0)=\frac{8\Lambda^2}{3}.
 \]
 
-The last equality follows algebraically from the displayed conjectural central expression after the displayed substitution; it does not establish that central expression.
+The last equality follows algebraically from the displayed derived central expression after the displayed substitution. It is a de Sitter consistency check and does not extend the local center result beyond the adopted ansatz or curvature convention.
 
-**Status: CONJECTURE.**
+Provenance: `02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md`, with the independent validation record in `12_VALIDATION/regularity/Scalar_Regular_Center_Test.md`.
 
-**Equation qualifier: SCHEMATIC working relation.** Preserve
+**Status: DERIVED.**
+
+**Equation qualifier: EXACT local regular-center consequence of the derived covariant scalar equation, within the protected working model, canonical conventions, and regular-center ansatz.** Preserve
 
 \[
 6\Phi_2
@@ -205,7 +207,7 @@ The last equality follows algebraically from the displayed conjectural central e
 =0.
 \]
 
-This is not a complete or derived scalar field equation and must not be cited as one.
+Provenance: `02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md`, independently checked in `12_VALIDATION/regularity/Scalar_Regular_Center_Test.md`. This local consequence must not be cited as a complete global field-equation solution and does not establish global existence, global regularity, stability, observational validity, or experimental support.
 
 ## 9. Units and dimensions
 
@@ -238,7 +240,7 @@ This is not a complete or derived scalar field equation and must not be cited as
 
 The action itself fixes only \([\alpha H]=1\). The separate assignments \([H]=1\) and \([\alpha]=1\) define the initial canonical parameterization; dimensions may later be redistributed between \(\alpha\) and \(H\) by a declared reparameterization without changing physical content.
 
-**Dimensional check of the conjectural central scalar relation.** Its terms have dimensions
+**Dimensional check of the derived central scalar relation.** Its terms have dimensions
 
 \[
 [\Phi_2]=M^3,\qquad [V']=M^3,
@@ -249,7 +251,7 @@ The action itself fixes only \([\alpha H]=1\). The separate assignments \([H]=1\
 =1\cdot M^2\cdot M^2\cdot M^{-1}=M^3.
 \]
 
-The relation is therefore dimensionally homogeneous. **Status: CONJECTURE.** Dimensional consistency does not verify its numerical coefficients, signs, derivation, or physical validity.
+The relation is therefore dimensionally homogeneous. **Status: DERIVED.** Dimensional consistency is a check on, not the source of, the independently derived numerical coefficients and signs, and it provides no empirical confirmation or global validity.
 
 ## 10. Variational conventions
 
@@ -295,7 +297,7 @@ Every future displayed field equation shall carry, immediately adjacent to it: (
 | Center series and parity assumptions | center regularity; field-equation order-by-order residuals |
 | Asymptotic class and time normalization | asymptotic behavior; conserved-charge definitions |
 | Boundary terms and boundary data | well-posed first variation; on-shell boundary residuals |
-| Conjectural central relations | independent symbolic derivation; dimensional consistency; de Sitter limit |
+| Derived local central relations | independent symbolic verification; dimensional consistency; de Sitter limit |
 
 # DECISION REGISTER
 
@@ -304,7 +306,7 @@ Every future displayed field equation shall carry, immediately adjacent to it: (
 - **Question:** Which Riemann and Ricci sign/contraction package is canonical?
 - **Available choices:** the package displayed in Section 2; its overall Riemann-sign reverse with consistent contractions; another fully explicit package.
 - **Consequences:** changes signs of \(R_{\mu\nu}\), \(R\), Einstein-equation formulas, de Sitter curvature relations, and intermediate scalar-coupling terms.
-- **Affected QFP equations:** the action's \(F R\) term, all future metric equations, curvature limits, and checks of the conjectural central relations.
+- **Affected QFP equations:** the action's \(F R\) term, all future metric equations, curvature limits, and checks of the derived local central relations.
 - **Former recommendation:** the explicit commutator convention displayed in Section 2.
 - **Adopted choice:** the commutator, component definition, Ricci contraction, Ricci scalar, and Einstein tensor displayed in Section 2.
 - **Reason:** it provides an executable and internally consistent convention package.
@@ -327,7 +329,7 @@ Every future displayed field equation shall carry, immediately adjacent to it: (
 
 - **Question:** What is the unit and action-normalization convention?
 - **Available choices:** geometrized dimensionless-scalar convention; \(c=\hbar=1\) dimensionless-action convention; explicit SI-like constants; Planck units only if separately justified.
-- **Consequences:** fixes dimensions of \(\Phi,F,H,V,\alpha\), the meaning of the scalar kinetic coefficient, and the dimensional interpretation of the schematic central scalar relation.
+- **Consequences:** fixes dimensions of \(\Phi,F,H,V,\alpha\), the meaning of the scalar kinetic coefficient, and the dimensional interpretation of the derived local central scalar relation.
 - **Affected QFP equations:** the full action and every field equation, especially the central scalar relation.
 - **Former recommendation:** provisionally use a geometrized dimensionless-scalar alternative.
 - **Adopted choice:** \(c=\hbar=1\), dimensionless action, canonical mass dimensions, explicit \(G_N\neq1\), and initial parameterization \([H]=[\alpha]=1\).

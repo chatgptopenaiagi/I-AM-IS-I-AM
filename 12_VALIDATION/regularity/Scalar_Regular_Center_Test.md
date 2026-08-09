@@ -69,7 +69,7 @@ The independent result was frozen before the historical relation was retrieved. 
 
 **Classification: EXACT MATCH.**
 
-The result does not falsify or supersede the historical conjecture. It independently reproduces it and supports promoting the active canonical central scalar relation and central Gauss-Bonnet expression from **CONJECTURE** to **DERIVED**, while preserving their former conjectural status in the research record.
+The result does not falsify or supersede the historical conjecture. It independently reproduces it. The active canonical central scalar relation and central Gauss-Bonnet expression now carry **Status: DERIVED**, while their former **CONJECTURE** status remains preserved in the historical research record.
 
 ## 7. Computational verification
 

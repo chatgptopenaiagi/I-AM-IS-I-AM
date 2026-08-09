@@ -332,7 +332,7 @@ The comparison is exact term by term:
 
 **Classification: EXACT MATCH.**
 
-**Status consequence.** The historical conjecture has now been independently reproduced from the DERIVED covariant scalar equation and independently calculated center invariants. The active canonical central scalar relation and central Gauss-Bonnet expression are suitable for promotion from **CONJECTURE** to **DERIVED**, provided the repository performs that status update as a separately recorded major change. This document does not rewrite their historical status in the conventions file; the research log preserves that they were conjectural before this test.
+**Status consequence.** The historical conjecture was independently reproduced from the DERIVED covariant scalar equation and independently calculated center invariants. The active canonical central scalar relation and central Gauss-Bonnet expression now carry **Status: DERIVED**; the separately recorded promotion preserves their earlier **CONJECTURE** status in the historical research record.
 
 ## 9. Computational verification boundary
 

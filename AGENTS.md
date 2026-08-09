@@ -112,7 +112,7 @@ delta(r) = delta0 + delta2 r^2 + O(r^4)
 Phi(r) = Phi0 + Phi2 r^2 + O(r^4)
 ```
 
-**Status: CONJECTURE.** The current working Gauss-Bonnet central expression is
+**Status: DERIVED.** Within the adopted static spherical regular-center expansion and canonical curvature convention, the Gauss-Bonnet central expression is
 
 ```text
 G(0) = 96 m3 (m3 - delta2)
@@ -126,11 +126,11 @@ m3 = Lambda/6
 G(0) = 8 Lambda^2 / 3
 ```
 
-These expressions are current working results awaiting an inspectable independent derivation and verification. The displayed substitution is algebraically consistent with the displayed central expression, but that substitution does not establish the central expression itself.
+Provenance: `02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md`, with the independent validation record in `12_VALIDATION/regularity/Scalar_Regular_Center_Test.md`. The displayed substitution is algebraically consistent with the derived central expression and supplies a de Sitter check; it does not extend the result beyond the adopted local ansatz and curvature convention.
 
-**Status: CONJECTURE.**
+**Status: DERIVED.**
 
-**Equation qualifier: schematic working relation.** The current central scalar relation is
+**Equation qualifier: EXACT local regular-center consequence of the derived covariant scalar equation, within the protected working model, canonical conventions, and regular-center ansatz.** The current central scalar relation is
 
 ```text
 6 Phi2
@@ -140,7 +140,7 @@ These expressions are current working results awaiting an inspectable independen
 = 0
 ```
 
-It is not established until checked against the complete field equations.
+Provenance: `02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md`, independently checked in `12_VALIDATION/regularity/Scalar_Regular_Center_Test.md`. This is a local result within the stated assumptions; it does not establish a global solution, global regularity, stability, observational validity, or experimental support.
 
 ## Continuum-Projection Ontology
 
