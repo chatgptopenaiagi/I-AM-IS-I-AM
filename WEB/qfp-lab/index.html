@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interactive visualization of QFP's derived local regular-center sector.">
+  <title>QFP Interactive Geometry Laboratory v0.1</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+</head>
+<body>
+<header><div><p class="eyebrow">QFP · LOCAL REGULAR-CENTER SECTOR</p><h1>Interactive Geometry Laboratory <small>v0.1</small></h1></div><p class="mapping">Visualization mapping, not a literal spacetime embedding.</p></header>
+<main>
+  <aside class="panel status-panel" aria-labelledby="status-title">
+    <h2 id="status-title">Scientific Integrity / Status</h2>
+    <section><h3>Object type: WORKING MODEL</h3><p>Scalar-tensor-Gauss-Bonnet action.</p></section>
+    <section><h3>Object type: ANSATZ</h3><p>Static spherical metric; regular-center series.</p></section>
+    <section><h3>Status: DERIVED</h3><p>□Φ(0) = 6Φ₂<br>R(0) = 24m₃ − 12δ₂<br>𝒢(0) = 96m₃(m₃ − δ₂)<br>Central scalar relation.</p></section>
+    <section><h3>Object type: SCHEMA / not validated by this lab</h3><p>Continuum-Projection ontology; C<sub>4D</sub> → Σ<sub>3D</sub>; embedded observer interpretation.</p></section>
+    <section><h3>NOT ESTABLISHED</h3><p>Global solution existence or regularity; stability; observational agreement; experimental confirmation; a physical projection mechanism; QFP as a theory of nature.</p></section>
+    <nav aria-label="Visualization modes"><h2>Visualization mode</h2>
+      <button data-mode="regular" aria-pressed="true">Regular center</button><button data-mode="scalar" aria-pressed="false">Scalar field</button><button data-mode="metric" aria-pressed="false">Metric function</button><button data-mode="curvature" aria-pressed="false">Curvature / invariants</button>
+    </nav>
+  </aside>
+  <section class="viewport" aria-labelledby="viewport-title"><h2 id="viewport-title" class="sr-only">Interactive three-dimensional visual mapping</h2><canvas id="scene"></canvas><p id="webgl-status" role="status">Loading optional WebGL scene. Textual mathematics remains available.</p><div class="legend"><span>Axes and origin r = 0</span><span>Radial shells</span><span>Equation-generated mappings</span></div></section>
+  <aside class="panel controls-panel"><h2>Model / visualization inputs</h2><p class="notice">Inputs are finite visualization/model values, not measured physical parameter estimates. F′(Φ₀), H′(Φ₀), and V′(Φ₀) remain independent.</p><div id="controls"></div><div class="actions"><button id="reset">Reset</button><button id="de-sitter">De Sitter preset</button></div><p id="domain-warning" class="warning" role="alert" hidden>Local-domain warning: N(r) reaches or crosses zero in the displayed interval. The truncated center series should not be interpreted beyond its supported local use.</p>
+    <h2>Live center quantities</h2><div class="cards"><article><span>Status: DERIVED</span><b>R(0)</b><output id="out-r"></output></article><article><span>Status: DERIVED</span><b>𝒢(0)</b><output id="out-gb"></output></article><article><span>Status: DERIVED</span><b>□Φ(0)</b><output id="out-box"></output></article><article class="residual"><span>Mathematical closure diagnostic</span><b>Scalar residual</b><output id="out-residual"></output></article></div><p>Residual = 0 is the local center-equation closure condition, not experimental confirmation.</p><p id="ds-check" aria-live="polite"></p>
+  </aside>
+</main>
+<footer class="panel"><section><h2>Live equations and substitutions</h2><div id="equations-live" class="equations"></div><p><strong>Object type: DEFINITION.</strong> N(r) = 1 − 2m(r)/r. <strong>Object type: ANSATZ.</strong> Displayed functions use the regular-center truncation only.</p></section><section><h2>Scope, provenance, and limitations</h2><p>This laboratory consumes canonical repository results; it does not reproduce their derivation. No particular F(Φ), H(Φ), or V(Φ) is imposed. Surface height, shell radius, opacity, and color are visualization mappings and are not extra physical dimensions, measurements, observations, or literal embeddings.</p><ul><li><a href="../../02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md">Regular-Center Scalar Reduction</a></li><li><a href="../../12_VALIDATION/regularity/Scalar_Regular_Center_Test.md">Scalar Regular-Center Test</a></li><li><a href="../../02_MATHEMATICS/Conventions_and_Notation.md">Conventions and Notation</a></li></ul></section></footer>
+<noscript><p class="warning">JavaScript is disabled. Scientific status, provenance, and canonical equations remain readable, but interactive calculations are unavailable.</p></noscript>
+<script type="module" src="./js/main.js"></script>
+</body></html>

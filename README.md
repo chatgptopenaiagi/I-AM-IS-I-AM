@@ -105,6 +105,10 @@ Provenance: `02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md`, ind
 
 See [AGENTS.md](AGENTS.md) for the binding repository governance and contribution rules.
 
+## QFP Interactive Geometry Laboratory
+
+The static laboratory in [`WEB/qfp-lab/`](WEB/qfp-lab/) interactively visualizes the independently derived local regular-center model. It is a visualization and mathematical consistency companion, not experimental validation of QFP and not a literal spacetime embedding.
+
 ## Validation principle
 
 Validation does not aim to prove QFP correct. It asks whether a claim survives mathematical, dimensional, limiting-case, regularity, asymptotic, numerical, observational, and falsifiability tests.
