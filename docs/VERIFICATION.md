@@ -1,6 +1,6 @@
 # Atlas verification record
 
-**Date:** 2026-11-11. **Scope:** local integrated research-atlas build, data invariants, mathematical/software checks, browser behavior and synthetic archive import. This record describes executed checks; it does not certify physical truth, historical completeness or a public deployment.
+**Date:** 2026-11-11. **Scope:** local integrated research-atlas build, data invariants, mathematical/software checks, browser behavior, synthetic archive import and the specifically identified live deployment below. This record describes executed checks; it does not certify physical truth or historical completeness.
 
 ## Environment and reproducibility
 
@@ -63,11 +63,31 @@ Separately, an external private `source-index.json` records SHA-256 for six save
 
 Private importer output is refused inside this repository or any `WEB` directory. Its exact source copies can contain sensitive data; they are not encrypted and inherit Windows permissions from the chosen parent. No source export is shipped in the website. The public build copies an explicit allowlist and refuses unexpected existing build files/directories and symlinks rather than silently publishing them.
 
+## Verified live deployment
+
+The [public atlas](https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/) returned **HTTP 200** at **2026-11-11T13:32:43.350Z**. This observation is tied to merge commit [`13b187732c68a5bea0e52ebfaac2ba86cfb29777`](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/commit/13b187732c68a5bea0e52ebfaac2ba86cfb29777), not to any later documentation commit.
+
+[PR #1](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/pull/1) merged normally after [PR validation run 43029400956](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43029400956) passed. The subsequent [main workflow run 43029614365](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43029614365) completed both validation and deployment successfully. An earlier [manual branch run 43028978675](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43028978675) passed validation but was rejected at deployment by the environment's main-only policy. That protection was preserved; the normal main-branch merge provided the authorized publication path.
+
+Chrome smoke checks against the live site verified the de Sitter reference PASS state, the point slice at the boundary, independence of the access window from the model state, scale reflection and the `SCHEMA` classification of `QFP-S001`. All three routes were checked at 390 pixels in Romanian without horizontal overflow. The [retained geometry laboratory](https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/geometry.html) and [historical compatibility route](https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/WEB/qfp-lab/index.html) also returned HTTP 200. The observed live run recorded **zero page errors and zero failed asset responses**. Live desktop and phone screenshots were visually inspected.
+
+The raw served bytes for `index.html`, `js/atlas.js`, `data/research.json` and `vendor/three/three.module.js` had SHA-256 values matching their committed Git blobs at the identified merge commit. This checks four specific deployed assets; it is not a claim that every public resource was exhaustively hashed. The local detailed evidence is `test-results/live-verification.json`; the [public sanitized deployment record](../12_VALIDATION/atlas-deployment-2026-11-11.json) records the successful reproducible repeat at **2026-11-11T13:34:30.797Z**, with the same source revision and asset hashes.
+
+The reproducible live checker compares against committed Git bytes rather than platform-dependent working-tree line endings:
+
+```sh
+node SOFTWARE/verify-published-atlas.mjs https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/ 13b187732c68a5bea0e52ebfaac2ba86cfb29777
+```
+
+The checker and this documentation are later verification additions. Their existence does not claim that they were included in the tested merge deployment; the published application source files remain the comparison target.
+
+Two verification-harness issues were resolved before the successful observation. The first live smoke assertion waited for a claim counter to become visible while its route was hidden; the check was corrected to account for route visibility. An initial raw hash comparison used Windows working-tree bytes with CRLF line endings against deployed Git/LF bytes; it was replaced with a comparison against the exact committed Git-blob bytes. Neither mismatch demonstrated an application failure, and neither was treated as a passed check without correction.
+
 ## What these results do not establish
 
 - They do not establish empirical support for QFP, a physical projection mechanism, global regularity, existence/uniqueness of a full solution, perturbative stability or agreement with observations.
 - They do not establish original conversation dates, participants, generating models, intellectual priority or complete research-history coverage for missing originals.
 - They do not independently verify every external source URL, browser/assistive-technology combination, hardware renderer or export schema.
-- They do not establish public Pages availability. The initial repository investigation found failed `ConfigurePages` runs and a Pages API 404. Local success and a configured workflow are separate from an observed live deployment.
+- Local tests alone do not establish public Pages availability. The live observation above separately establishes availability and the stated behavior for the identified merge deployment at its observation time; it does not establish uninterrupted future availability or deployment of later changes.
 
-The workflow validates pull requests and can publish through the existing Pages environment on an authorized main/manual run. Repository/environment protections are respected; this record does not claim that a deployment ran or that protections were bypassed. Any later live URL and deployment outcome must be recorded from the observed deployment result.
+The initial repository investigation found failed `ConfigurePages` runs and a Pages API 404. The subsequent successful main deployment and live checks are recorded above without erasing that earlier history. Repository/environment protections remained in place. Any later revision requires its own deployment observation before being described as live.

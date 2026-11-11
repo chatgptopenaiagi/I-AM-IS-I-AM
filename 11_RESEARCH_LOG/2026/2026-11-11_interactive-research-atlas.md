@@ -47,6 +47,16 @@ python -B SOFTWARE/tests/test_atlas_data_validation.py
 
 These results validate software/data invariants and preserved canonical mappings; they do not validate historical authenticity, physical truth or the completeness of missing source material.
 
+## Publication and live verification
+
+[PR #1](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/pull/1) merged normally as [`13b187732c68a5bea0e52ebfaac2ba86cfb29777`](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/commit/13b187732c68a5bea0e52ebfaac2ba86cfb29777) after [PR run 43029400956](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43029400956) passed. [Main run 43029614365](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43029614365) subsequently succeeded in both validation and deployment. Earlier manual branch run `43028978675` had passed validation but its deployment was rejected by the main-only environment policy. The protections were preserved and publication proceeded through the normal main merge.
+
+The [public atlas](https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/) was observed at **2026-11-11T13:32:43.350Z** with **HTTP 200**. Live Chrome checks verified the de Sitter reference PASS state, boundary-point slice, access-window independence, scale reflection and `QFP-S001` as `SCHEMA`. All three routes were checked in Romanian at 390 pixels without horizontal overflow. The retained geometry and compatibility routes returned HTTP 200; the live run reported zero page errors and zero failed asset responses. Live desktop/phone screenshots were visually inspected.
+
+SHA-256 comparisons of four served assets—`index.html`, `atlas.js`, `research.json` and `three.module.js`—matched the exact committed Git-blob bytes at the merge commit. Detailed local evidence is recorded in `test-results/live-verification.json`; the [public sanitized deployment record](../../12_VALIDATION/atlas-deployment-2026-11-11.json) captures the latest repeat observation and hashes. The reproducible command is `node SOFTWARE/verify-published-atlas.mjs https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/ 13b187732c68a5bea0e52ebfaac2ba86cfb29777`, with scope described in the [verification record](../../docs/VERIFICATION.md). An initial smoke assertion waiting for a hidden-route counter to be visible and a Windows-CRLF-versus-Git-LF hash comparison were corrected as verification-harness issues, not classified as application failures or silently counted as successful checks.
+
+The reproducible live checker passed again at **2026-11-11T13:34:30.797Z**, recorded in the public sanitized JSON with source revision `13b187732c68a5bea0e52ebfaac2ba86cfb29777`. These live results apply to that identified merge deployment at the observed times. They do not claim that a later verification-tool/documentation commit or future revision has already deployed.
+
 ## Consequences and unresolved issues
 
 - Readers can inspect public source summaries and model boundaries while raw private archives remain outside the site and Git.
@@ -54,4 +64,4 @@ These results validate software/data invariants and preserved canonical mappings
 - Complete original conversation exports, the missing PDF and reported historical leads still require original-source recovery before transcript-level claims can be made.
 - Historical topology/curvature/uniqueness assertions retain their original context and explicit review concerns; they do not become canonical results through visualization.
 - The metric draft still requires independent review at the stated level. Full metric reduction, boundary conditions, global existence/uniqueness, convergence radius, stability and observational discrimination remain separate research tasks.
-- Initial Pages investigation found failed `ConfigurePages` runs and a Pages API 404. A successful local build must not be represented as a successful public deployment; any later publication needs its own observed URL and asset checks.
+- Initial Pages investigation found failed `ConfigurePages` runs and a Pages API 404; the later successful main deployment and live verification are recorded above. Local tests alone do not establish public availability, and any future revision still needs its own deployment/asset observation.

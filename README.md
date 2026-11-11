@@ -23,7 +23,7 @@ npm run build
 npm run serve
 ```
 
-Open **[http://127.0.0.1:4173/I-AM-IS-I-AM/](http://127.0.0.1:4173/I-AM-IS-I-AM/)** after the local server starts. The build writes `dist/`; the local preview serves the browser application sources in [`WEB/qfp-lab/`](WEB/qfp-lab/) by default. Set `ATLAS_ROOT=dist` to preview the built bundle instead. The original geometry laboratory is retained as [`geometry.html`](WEB/qfp-lab/geometry.html). A public deployment is not claimed by these local instructions.
+Open **[http://127.0.0.1:4173/I-AM-IS-I-AM/](http://127.0.0.1:4173/I-AM-IS-I-AM/)** after the local server starts. The build writes `dist/`; the local preview serves the browser application sources in [`WEB/qfp-lab/`](WEB/qfp-lab/) by default. Set `ATLAS_ROOT=dist` to preview the built bundle instead. The original geometry laboratory is retained as [`geometry.html`](WEB/qfp-lab/geometry.html). See the [verification record](docs/VERIFICATION.md) for local tests and the separately verified public deployment.
 
 The atlas separates four interactive modules: the canonical QFP local-center model, continuum/projection exploration, access constraints, and micro/macro scale exploration. The module descriptions state which elements are definitions, conditional derivations, historical proposals or illustrations. A control changing a visual does not establish a physical mechanism.
 

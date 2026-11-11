@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-11-11T13:34:30.797Z",
+  "source_revision": "13b187732c68a5bea0e52ebfaac2ba86cfb29777",
+  "url": "https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/",
+  "http_status": 200,
+  "title": "I-AM-IS-I-AM · Research Atlas",
+  "claims": 34,
+  "checks": [
+    "de Sitter",
+    "projection boundary",
+    "access state/window independence",
+    "scale reflection",
+    "SCHEMA claim inspection",
+    "Romanian phone navigation without overflow",
+    "legacy routes"
+  ],
+  "asset_hashes": [
+    {
+      "file": "index.html",
+      "sha256": "16c87f4d68ddd4d8e55c4e4c1518f93af6406f03c61ab5885ddf13779b475b99"
+    },
+    {
+      "file": "js/atlas.js",
+      "sha256": "74ac050b30d6a46d9604318b047d4b5b72d32e9058354503bb42437f95ff45d2"
+    },
+    {
+      "file": "data/research.json",
+      "sha256": "98c8362305ed4da618ca6a5da970c040e9cc5c3fe17ae6e4b58ef61be731928a"
+    },
+    {
+      "file": "vendor/three/three.module.js",
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    }
+  ],
+  "page_errors": [],
+  "failed_responses": []
+}
