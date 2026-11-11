@@ -16,7 +16,10 @@ concurrency:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      ATLAS_BROWSER_CHANNEL: chrome
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -25,15 +28,35 @@ jobs:
         with:
           node-version: "26"
           cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            services/mcp/package-lock.json
       - name: Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.14"
       - name: Install pinned test dependencies
+        timeout-minutes: 5
         run: |
           npm ci --ignore-scripts --no-audit --no-fund
           python -m pip install sympy==1.14.0
-          npx playwright install --with-deps chromium
+          google-chrome --version
+      - name: Install isolated Triad service dependencies
+        timeout-minutes: 5
+        run: |
+          npm ci --prefix services/mcp --ignore-scripts --no-audit --no-fund
+          python -m venv services/microsoft/.venv
+          services/microsoft/.venv/bin/python -m pip install -r services/microsoft/requirements.txt
+      - name: MCP transports, interactive app and offline Microsoft boundary tests
+        env:
+          TRIAD_MICROSOFT_PROVIDER: ""
+          WOLFRAMSCRIPT_PATH: ""
+          TRIAD_WOLFRAMSCRIPT: ""
+        run: |
+          npm --prefix services/mcp run build
+          npm --prefix services/mcp test
+          npm --prefix services/mcp run test:browser
+          services/microsoft/.venv/bin/python -B -m unittest discover -s services/microsoft -p 'test_*.py' -v
       - name: Mathematics, provenance and synthetic importer tests
         run: |
           npm test
@@ -50,6 +73,7 @@ jobs:
         with:
           path: dist
   deploy:
+    timeout-minutes: 10
     if: github.event_name != 'pull_request'
     needs: validate
     permissions:

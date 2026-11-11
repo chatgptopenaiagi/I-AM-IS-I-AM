@@ -7,7 +7,11 @@ export default defineConfig({
   use: {
     baseURL: "http://127.0.0.1:4174/I-AM-IS-I-AM/",
     viewport: { width: 1440, height: 1000 },
-    launchOptions: process.platform === "win32" ? { channel: "chrome" } : {},
+    launchOptions: process.env.ATLAS_BROWSER_CHANNEL
+      ? { channel: process.env.ATLAS_BROWSER_CHANNEL }
+      : process.platform === "win32"
+        ? { channel: "chrome" }
+        : {},
   },
   webServer: {
     command: "node SOFTWARE/serve-atlas.mjs",

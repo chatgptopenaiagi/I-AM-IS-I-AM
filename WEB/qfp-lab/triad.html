@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Three computational perspectives on one source-backed research corpus: mathematics, interpretation and connected research."
+    />
+    <title>I-AM-IS-I-AM · Triad Research Engine</title>
+    <link rel="stylesheet" href="./atlas.css" />
+    <link rel="stylesheet" href="./triad.css" />
+  </head>
+  <body>
+    <a class="skip" href="#triad-main" data-t="skip"
+      >Skip to the research workspace</a
+    >
+    <header class="site-header">
+      <a class="brand" href="./"
+        ><span class="brand-mark" aria-hidden="true">◉</span
+        ><span>I-AM-IS-I-AM<small>TRIAD RESEARCH ENGINE</small></span></a
+      >
+      <nav aria-label="Research navigation">
+        <a href="./" data-t="atlas">Research atlas</a
+        ><a href="#connections" data-t="connections">Service connections</a>
+      </nav>
+      <label class="language"
+        ><span class="sr-only" data-t="language">Language</span
+        ><select id="triad-language">
+          <option value="en">EN</option>
+          <option value="ro">RO</option>
+        </select></label
+      >
+    </header>
+    <main id="triad-main" tabindex="-1">
+      <section class="triad-hero">
+        <div>
+          <p class="eyebrow" data-t="eyebrow">
+            ONE CORPUS / THREE PERSPECTIVES
+          </p>
+          <h1 data-t="hero">Follow one idea.<br />See three perspectives.</h1>
+          <p class="intro" data-t="intro">
+            Compute a model, examine its interpretation, and follow its
+            evidence. Each panel shares the same research object.
+          </p>
+        </div>
+        <aside class="triad-principle">
+          <span aria-hidden="true">01 ↔ 02 ↔ 03</span>
+          <p data-t="principle">
+            Computational views of a research corpus. A working visualization
+            does not establish a physical theory.
+          </p>
+          <a href="./" data-t="original"
+            >Return to the original experiments ↗</a
+          >
+        </aside>
+      </section>
+      <div id="triad-status" role="status" aria-live="polite"></div>
+      <nav
+        class="topic-tabs"
+        aria-label="Research topics"
+        id="topic-tabs"
+      ></nav>
+      <section class="selection-strip" aria-labelledby="selected-title">
+        <label
+          ><span data-t="object">Research object</span
+          ><select id="triad-object"></select
+        ></label>
+        <div class="context-title">
+          <p class="eyebrow">
+            <span id="selected-id"></span>
+            <span id="selected-classification" class="badge"></span>
+          </p>
+          <h2 id="selected-title"></h2>
+          <p id="selected-summary"></p>
+        </div>
+        <div class="selection-actions">
+          <button id="triad-reset" data-t="reset">Reset parameters</button
+          ><button id="triad-share" data-t="share">Copy experiment link</button>
+        </div>
+      </section>
+      <section
+        class="triad-grid"
+        aria-label="Synchronized research perspectives"
+      >
+        <article class="triad-panel mathematics" aria-labelledby="math-title">
+          <div class="panel-heading">
+            <span class="panel-number">01</span>
+            <div>
+              <p class="eyebrow">WOLFRAM LANGUAGE</p>
+              <h2 id="math-title" data-t="math">Mathematics</h2>
+            </div>
+            <span class="context-id"></span>
+          </div>
+          <p class="panel-caption" data-t="mathCaption">
+            One construction, independently executable representations.
+          </p>
+          <div class="engine-line">
+            <span class="cap available" data-t="browserAvailable"
+              >Browser · AVAILABLE</span
+            ><span id="wolfram-status" class="cap"
+              >Wolfram · NOT CONFIGURED</span
+            >
+          </div>
+          <div
+            id="math-plot"
+            class="triad-plot"
+            role="img"
+            aria-label="Mathematical visualization"
+          ></div>
+          <p id="plot-description" class="plot-caption"></p>
+          <form
+            id="experiment-controls"
+            aria-label="Experiment parameters"
+          ></form>
+          <div id="experiment-actions" class="toolbar">
+            <button id="run-browser" class="primary" data-t="compute">
+              Compute in browser</button
+            ><button id="run-wolfram" disabled data-t="runWolfram">
+              Compare with Wolfram
+            </button>
+          </div>
+          <div id="computation-notice" role="status"></div>
+          <dl id="experiment-readouts" class="triad-readouts"></dl>
+          <details>
+            <summary data-t="equations">Equations & assumptions</summary>
+            <div id="math-equations"></div>
+          </details>
+          <details>
+            <summary data-t="record">
+              Input → process → output → validation
+            </summary>
+            <pre id="experiment-record" tabindex="0"></pre>
+          </details>
+          <div class="toolbar">
+            <button id="triad-export" data-t="export">
+              Export experiment JSON</button
+            ><button id="triad-import-button" data-t="import">
+              Import & reproduce</button
+            ><input
+              id="triad-import"
+              type="file"
+              accept="application/json,.json"
+              class="sr-only"
+            /><button id="export-object" data-t="exportObject">
+              Export research object
+            </button>
+          </div>
+          <p class="small-note" data-t="exportNote">
+            Exports contain public research data and parameters, never
+            connection credentials or conversation text.
+          </p>
+        </article>
+        <article class="triad-panel interpretation" aria-labelledby="ai-title">
+          <div class="panel-heading">
+            <span class="panel-number">02</span>
+            <div>
+              <p class="eyebrow">MICROSOFT AGENT FRAMEWORK</p>
+              <h2 id="ai-title" data-t="interpretation">AI interpretation</h2>
+            </div>
+            <span class="context-id"></span>
+          </div>
+          <p class="panel-caption" data-t="aiCaption">
+            An assistant can explain evidence. It cannot upgrade it.
+          </p>
+          <div class="engine-line">
+            <span id="microsoft-status" class="cap"
+              >Microsoft AI · NOT CONFIGURED</span
+            >
+          </div>
+          <label class="field-label" for="guide-question" data-t="guideLabel"
+            >Start with a research question</label
+          ><select id="guide-question"></select>
+          <div class="guide-answer">
+            <p class="eyebrow" data-t="guideKind">
+              RETRIEVED SOURCE / LOCAL READING GUIDE
+            </p>
+            <div id="local-answer"></div>
+            <p class="small-note" data-t="notAI">
+              This offline guide selects existing records; it is not an LLM
+              response.
+            </p>
+          </div>
+          <label class="field-label" for="research-question" data-t="askLabel"
+            >Ask the configured research assistant</label
+          ><textarea
+            id="research-question"
+            rows="4"
+            maxlength="2000"
+            placeholder="Which premises support this claim?"
+          ></textarea>
+          <details id="disclosure-preview">
+            <summary data-t="preview">
+              Review question and public context
+            </summary>
+            <pre id="disclosure-body"></pre>
+            <p class="small-note" data-t="disclosureNote">
+              The server adds fixed research instructions and version metadata.
+              Its retrieval tool can read only this selected public record.
+            </p>
+          </details>
+          <label class="consent"
+            ><input type="checkbox" id="disclosure-consent" /><span
+              data-t="consent"
+              >Send this question and the selected public research context to my
+              configured model provider.</span
+            ></label
+          >
+          <button id="ask-agent" class="primary" disabled data-t="ask">
+            Send to configured model
+          </button>
+          <div id="agent-answer" role="status" aria-live="polite"></div>
+          <details>
+            <summary data-t="answerBasis">How to read an answer</summary>
+            <ul id="basis-guide"></ul>
+          </details>
+        </article>
+        <article
+          class="triad-panel connections"
+          aria-labelledby="research-title"
+        >
+          <div class="panel-heading">
+            <span class="panel-number">03</span>
+            <div>
+              <p class="eyebrow">OPENAI APPS / MCP</p>
+              <h2 id="research-title" data-t="research">Connected research</h2>
+            </div>
+            <span class="context-id"></span>
+          </div>
+          <p class="panel-caption" data-t="researchCaption">
+            The same IDs, explicit tools, inspectable provenance.
+          </p>
+          <div class="engine-line">
+            <span id="mcp-status" class="cap">MCP · NOT CONFIGURED</span
+            ><span class="cap" data-t="chatgptStatus"
+              >ChatGPT connection · NOT CONFIGURED</span
+            >
+          </div>
+          <p class="small-note" data-t="chatgptNote">
+            A local MCP server is not automatically a published ChatGPT app.
+          </p>
+          <h3 data-t="sources">Sources</h3>
+          <div id="triad-sources"></div>
+          <h3 data-t="dependencies">Premises & dependencies</h3>
+          <div id="triad-dependencies"></div>
+          <h3 data-t="limitations">What remains open</h3>
+          <ul id="triad-limitations"></ul>
+          <details>
+            <summary data-t="tools">Scoped research tools</summary>
+            <ul id="tool-list"></ul>
+            <label for="tool-select" class="field-label" data-t="toolLabel"
+              >Inspect a request</label
+            ><select id="tool-select"></select>
+            <pre id="tool-preview"></pre>
+            <p class="small-note" data-t="toolNote">
+              This is a request preview. No remote tool call has been made.
+            </p>
+            <button id="copy-tool" data-t="copyTool">Copy MCP request</button>
+          </details>
+          <details>
+            <summary data-t="provenance">Full public research record</summary>
+            <pre id="object-record" tabindex="0"></pre>
+          </details>
+        </article>
+      </section>
+      <section
+        id="connections"
+        class="service-settings"
+        aria-labelledby="connections-title"
+      >
+        <div>
+          <p class="eyebrow" data-t="optional">
+            OPTIONAL / OWNER-CONFIGURED SERVICES
+          </p>
+          <h2 id="connections-title" data-t="connectTitle">
+            Connect your research gateway
+          </h2>
+          <p data-t="connectIntro">
+            The static atlas needs no credentials. Connect only a gateway you
+            operate or trust; provider secrets stay on its server.
+          </p>
+          <p class="small-note" data-t="connectNote">
+            The address and access token stay in this page’s memory. They are
+            excluded from shared links and exports.
+          </p>
+          <a
+            href="https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/main/docs/TRIAD.md"
+            data-t="setup"
+            >Setup, architecture and service boundaries ↗</a
+          >
+        </div>
+        <form id="gateway-form">
+          <label
+            ><span data-t="gateway">Gateway URL</span
+            ><input
+              type="url"
+              id="gateway-url"
+              placeholder="http://127.0.0.1:4318"
+              autocomplete="off" /></label
+          ><label
+            ><span data-t="token">Gateway access token</span
+            ><input
+              type="password"
+              id="gateway-token"
+              autocomplete="off"
+              minlength="32"
+              maxlength="256"
+          /></label>
+          <div class="toolbar">
+            <button id="connect-gateway" type="submit" data-t="connect">
+              Check connection</button
+            ><button id="disconnect-gateway" type="button" data-t="disconnect">
+              Disconnect
+            </button>
+          </div>
+          <p id="gateway-result" role="status"></p>
+        </form>
+      </section>
+      <footer class="triad-footer">
+        <p>
+          I-AM-IS-I-AM ·
+          <span data-t="credit">Research by Swami CIT Ananda</span>
+        </p>
+        <p data-t="footer">
+          Shared evidence. Independent methods. Explicit limits.
+        </p>
+        <a href="./" data-t="atlas">Research atlas</a>
+      </footer>
+    </main>
+    <script type="module" src="./js/triad.js"></script>
+  </body>
+</html>

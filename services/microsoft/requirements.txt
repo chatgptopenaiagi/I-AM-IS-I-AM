@@ -1,0 +1,5 @@
+# Direct dependencies; requirements-lock.txt records the tested Windows/Python 3.14 environment.
+agent-framework-core==1.25.0
+agent-framework-foundry==1.16.1
+agent-framework-ollama==1.0.0b261106
+azure-identity==1.27.0

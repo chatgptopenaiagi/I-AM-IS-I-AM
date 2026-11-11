@@ -8,6 +8,12 @@ Research program: **Swami CIT Ananda / `chatgptopenaiagi`**. Individual sources 
 
 **[Open the research atlas](https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/)** · [Deployment status](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/workflows/qfp-pages.yml)
 
+**[Explore the Triad Research Engine](https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/triad.html)** — select one research object and follow its mathematics, interpretation and sources across three synchronized panels, in English or Romanian. The four browser experiments work without an AI account or mathematical runtime. [Triad guide and architecture](docs/TRIAD.md) · [Verification and service status](docs/TRIAD-VERIFICATION.md).
+
+![Triad Research Engine showing the same QFP object in all three panels](assets/triad-desktop.png)
+
+The optional integrations have distinct boundaries: fixed Wolfram Language calculations require a local Wolfram runtime; Microsoft Agent Framework explanations require a configured Foundry or local Ollama provider; the MCP server exposes eleven scoped research tools and an interactive MCP App. The adapters are implemented and locally tested, but no live Wolfram execution, model response or ChatGPT deployment is claimed. The shared adapter preserves all 34 public research IDs and their existing scientific classifications.
+
 ![Research atlas desktop interface](assets/atlas-desktop.png)
 
 [Research atlas](01_THEORY/Research_Atlas.md) · [Source register](10_REFERENCES/Atlas_Sources.md) · [Corpus coverage](10_REFERENCES/Corpus_Coverage.md) · [Mathematical review](12_VALIDATION/Atlas_Mathematical_Review.md) · [Verification](docs/VERIFICATION.md) · [Contributing](docs/CONTRIBUTING.md)
@@ -24,6 +30,8 @@ npm run serve
 ```
 
 Open **[http://127.0.0.1:4173/I-AM-IS-I-AM/](http://127.0.0.1:4173/I-AM-IS-I-AM/)** after the local server starts. The build writes `dist/`; the local preview serves the browser application sources in [`WEB/qfp-lab/`](WEB/qfp-lab/) by default. Set `ATLAS_ROOT=dist` to preview the built bundle instead. The original geometry laboratory is retained as [`geometry.html`](WEB/qfp-lab/geometry.html). See the [verification record](docs/VERIFICATION.md) for local tests and the separately verified public deployment.
+
+The Triad view is at **[http://127.0.0.1:4173/I-AM-IS-I-AM/triad.html](http://127.0.0.1:4173/I-AM-IS-I-AM/triad.html)**. Service setup is separate: [Wolfram](docs/TRIAD-WOLFRAM.md), [Microsoft](docs/TRIAD-MICROSOFT.md), [MCP and ChatGPT requirements](docs/TRIAD-MCP.md). GitHub Pages publishes only the static frontend; it does not run these services.
 
 The atlas separates four interactive modules: the canonical QFP local-center model, continuum/projection exploration, access constraints, and micro/macro scale exploration. The module descriptions state which elements are definitions, conditional derivations, historical proposals or illustrations. A control changing a visual does not establish a physical mechanism.
 
