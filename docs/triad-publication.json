@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "scope": "Observed public static interfaces only",
+  "pull_request": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/pull/3",
+  "deployment_run": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43038284145",
+  "triad": {
+    "observed_at": "2026-11-11T14:27:23.924Z",
+    "source_revision": "5c89e71151d31c65bd2e5cdc78554327dff5dc1e",
+    "url": "https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/triad.html",
+    "http_status": 200,
+    "checks": [
+      "10 published asset hashes match explicit Git source",
+      "six topics synchronize all panels",
+      "de Sitter reference",
+      "slice boundary",
+      "SCHEMA remains non-executable",
+      "Romanian phone layouts",
+      "no automatic optional service requests"
+    ],
+    "asset_hashes": [
+      {
+        "file": "triad.html",
+        "sha256": "ca889dd3f2d2ba9bd950edee9a6292c51b731ebee0aab7efeb5d2059ca5dfada"
+      },
+      {
+        "file": "triad.css",
+        "sha256": "aca84f8ea4b59741e74f84ca4a665583c726b2ceff9c4346378d63b134e13234"
+      },
+      {
+        "file": "atlas.css",
+        "sha256": "07f3e0708b2481bee7ca6127ea1179efce448f4cf87bf49e2802579ea78bdf37"
+      },
+      {
+        "file": "js/triad.js",
+        "sha256": "f49711006632f26adb78379eb40afd24a2b2448cdf142d5a3a61cb9cd6fcbd98"
+      },
+      {
+        "file": "js/triad-state.js",
+        "sha256": "60d242cdcd79c68c904e15958db5369da067288ff265280477be8e8710a18c87"
+      },
+      {
+        "file": "js/triad-i18n.js",
+        "sha256": "b50e3cc50d5ad00bb80f52c8dccf1df21ae513dd6bd80f95dae28e3bd24cb017"
+      },
+      {
+        "file": "js/triad-responses.js",
+        "sha256": "7e48fb97b8bf458f6329ff48bf78f54b1780fff066784c2ffdfd0b2635d7c90b"
+      },
+      {
+        "file": "js/research-interface.js",
+        "sha256": "9729ced13d148361917d3e93afcd029a97e66dd8367c1b041ee13a69c0ec1c8b"
+      },
+      {
+        "file": "js/research-experiments.js",
+        "sha256": "520f39049020ab7d2744d362fb95ec6f392473092455cc7437ae8f3271479c9d"
+      },
+      {
+        "file": "data/research.json",
+        "sha256": "98c8362305ed4da618ca6a5da970c040e9cc5c3fe17ae6e4b58ef61be731928a"
+      }
+    ],
+    "page_errors": [],
+    "failed_responses": [],
+    "limits": "Static deployed interface only; no provider inference, Wolfram kernel or ChatGPT registration verified."
+  },
+  "atlas": {
+    "observed_at": "2026-11-11T14:27:24.257Z",
+    "source_revision": "5c89e71151d31c65bd2e5cdc78554327dff5dc1e",
+    "url": "https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/",
+    "http_status": 200,
+    "title": "I-AM-IS-I-AM · Research Atlas",
+    "claims": 34,
+    "checks": [
+      "de Sitter",
+      "projection boundary",
+      "access state/window independence",
+      "scale reflection",
+      "SCHEMA claim inspection",
+      "Romanian phone navigation without overflow",
+      "legacy routes"
+    ],
+    "asset_hashes": [
+      {
+        "file": "index.html",
+        "sha256": "398f7e8d8aba305e0245f4e6de56ecca21f74a1941a31171945092030ee21fa8"
+      },
+      {
+        "file": "js/atlas.js",
+        "sha256": "74ac050b30d6a46d9604318b047d4b5b72d32e9058354503bb42437f95ff45d2"
+      },
+      {
+        "file": "data/research.json",
+        "sha256": "98c8362305ed4da618ca6a5da970c040e9cc5c3fe17ae6e4b58ef61be731928a"
+      },
+      {
+        "file": "vendor/three/three.module.js",
+        "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+      }
+    ],
+    "page_errors": [],
+    "failed_responses": []
+  }
+}
