@@ -1,8 +1,8 @@
-# Triad local verification record
+# Triad verification and publication record
 
-CI setup note: the first [PR run](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43036487158) was cancelled after over seven minutes of setup. Its log shows repeated Ubuntu archive timeouts while installing optional browser fonts, before any tests. The workflow now pins `ubuntu-24.04`, uses its preinstalled Chrome through `ATLAS_BROWSER_CHANNEL=chrome`, and bounds setup steps to five minutes and validation to fifteen. The [official runner inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) documents the installed browser. This changes the browser provisioning path, not the tests or their acceptance criteria; the replacement hosted run still needs observation.
+CI setup note: the first [PR run](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43036487158) was cancelled after over seven minutes of setup. Its log shows repeated Ubuntu archive timeouts while installing optional browser fonts, before any tests. The workflow now pins `ubuntu-24.04`, uses its preinstalled Chrome through `ATLAS_BROWSER_CHANNEL=chrome`, and bounds setup steps to five minutes and validation to fifteen. The [official runner inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) documents the installed browser. The replacement [PR validation](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43037962100) passed in 1m28s, including the unchanged acceptance tests.
 
-**Date:** 2026-11-11. **Scope:** the completed local TriadResearchEngine validation on `codex/triad-research-engine`, based on repository commit `8c9308c` (`Merge pull request #2 from chatgptopenaiagi/codex/atlas-publication-record`). The final built browser bundle passed after the mobile/layout and presentation corrections. Hosted CI and deployment remain pending; this is not a deployment record.
+**Date:** 2026-11-11. **Scope:** Triad Research Engine implementation and publication, based on repository commit `8c9308c`, delivered through [PR #3](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/pull/3). Its merge commit is `5c89e71151d31c65bd2e5cdc78554327dff5dc1e`. Local validation, hosted Linux CI, Pages deployment, and read-only live verification completed separately as recorded below.
 
 The previous atlas's [verification record](VERIFICATION.md) remains historical evidence for that implementation. Its passing counts are not automatically evidence for newly added Triad behavior. Tests being present in the worktree also do not establish that they ran.
 
@@ -23,7 +23,9 @@ The previous atlas's [verification record](VERIFICATION.md) remains historical e
 | MCP App browser test | **1/1 passed** with actual Chrome, official AppBridge/PostMessageTransport and real SDK HTTP client; 34 selections, actual ball calculation, unsupported-object handling and context sharing. Reran successfully after the final owned changes. This is distinct from the root browser suite. |
 | Microsoft worker offline suite | **17/17 passed** after the editorial/original-wording correction and its English/Romanian regression; `pip check` found no broken requirements. Actual SDK construction and a labelled synthetic model/tool loop ran with provider sockets forbidden. No live inference was performed. |
 | Final built browser suite: `npm run test:browser` | **26/26 passed:** 16 atlas tests, nine Triad tests and one actual frontend/gateway test. Final report: zero skipped, unexpected, flaky or top-level errors. The full suite ran after the mobile-overflow correction against `ATLAS_ROOT=dist`. |
-| Live provider, real Wolfram, remote MCP/ChatGPT registration, Triad deployment | **NOT PERFORMED / NOT VERIFIED**. No generated answer, Wolfram image, provider availability or published Triad URL is claimed. |
+| Hosted Linux CI and Pages | PR validation passed; the [main-branch workflow](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43038284145) then passed validation and deployment for merge commit `5c89e71`. |
+| Live static Triad and original atlas | **PASSED** at 2026-11-11 14:27:23–24 UTC. Both returned HTTP 200; tested interactions and published asset hashes matched the exact merge commit. See the [machine-readable observations](triad-publication.json). |
+| Live provider, real Wolfram, remote MCP/ChatGPT registration | **NOT PERFORMED / NOT VERIFIED**. No generated answer, Wolfram image or live provider availability is claimed. |
 
 The focused command was:
 
@@ -49,7 +51,7 @@ npm --prefix services/mcp run test:browser
 & services/microsoft/.venv/Scripts/python.exe -m pip check
 ```
 
-MCP and Microsoft exact package versions and test mechanisms are recorded in [TRIAD-MCP.md](TRIAD-MCP.md) and [TRIAD-MICROSOFT.md](TRIAD-MICROSOFT.md). Integration-suite counts describe distinct suites, not the number of assertions inside them. No combined “total tests” is reported across heterogeneous frameworks. The configured Linux CI path has not yet executed; successful Windows local tests do not certify that future workflow run.
+MCP and Microsoft exact package versions and test mechanisms are recorded in [TRIAD-MCP.md](TRIAD-MCP.md) and [TRIAD-MICROSOFT.md](TRIAD-MICROSOFT.md). Integration-suite counts describe distinct suites, not the number of assertions inside them. No combined “total tests” is reported across heterogeneous frameworks. The same workflow steps also passed on the pinned Ubuntu runner with installed Google Chrome 156.0.8078.79; the hosted browser log records all 26 passing tests.
 
 The intermediate root browser run passed 25/26 with one mobile-overflow failure. The layout was corrected, the complete built suite then passed 26/26, and fresh desktop/mobile screenshots were visually inspected. The final local JSON report in `test-results/browser-results.json` records start time `2026-11-11T14:08:27.894Z`, 26 expected passes, zero skipped/unexpected/flaky tests and zero top-level errors. The report is a generated local test artifact, not a public research source.
 
@@ -83,6 +85,19 @@ Read-only source review led to the following corrections before the final passin
 - The truncated-`N(r)` zero-crossing warning is surfaced near the QFP readouts, retaining the local-validity and no-proven-horizon limitations.
 - Actual frontend/gateway interaction, mobile/desktop behavior, keyboard operation, source/context behavior and unavailable-provider paths are covered by the completed browser suite. Optional live providers and Wolfram were not substituted with claimed successes.
 
-Hosted Linux CI, a public Triad deployment, a production MCP host registration, real Wolfram execution and live provider inference remain unverified. The implemented but unexecuted Wolfram scripts and explicitly synthetic Microsoft/parser test data do not fill those gaps.
+A production MCP host registration, real Wolfram execution and live provider inference remain unverified. The implemented but unexecuted Wolfram scripts and explicitly synthetic Microsoft/parser test data do not fill those gaps.
 
-Local processes used by tests have test-owned cleanup. The browser and gateway boundary checks do not establish production security, all browser local-network policies, provider permissions, result quality or remote deployment readiness. The proposed static site build and an observed public deployment remain separate facts.
+Local processes used by tests have test-owned cleanup. The browser and gateway boundary checks do not establish production security, all browser local-network policies, provider permissions, result quality or remote service deployment readiness.
+
+## Published interface verification
+
+The live [Triad Lab](https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/triad.html) was checked in Chrome against ten committed public asset hashes. The check exercised all six synchronized topic routes, the de Sitter comparison, point slice boundary, non-executable `SCHEMA`, Romanian phone layout and absence of automatic optional-service requests. The original atlas was independently rechecked with four asset hashes, all four mathematical demonstrations, claim inspection, Romanian navigation and compatibility routes. Both runs recorded zero page errors and failed HTTP responses. The repeated research JSON hash is counted in each report, not as two distinct source files.
+
+Actual reproduction commands:
+
+```text
+node SOFTWARE/verify-published-triad.mjs https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/ 5c89e71151d31c65bd2e5cdc78554327dff5dc1e
+node SOFTWARE/verify-published-atlas.mjs https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/ 5c89e71151d31c65bd2e5cdc78554327dff5dc1e
+```
+
+The committed JSON contains only public URLs, asset digests, timestamps and test outcomes. Live screenshots were visually inspected and remain generated local verification artifacts. No private corpus or credential is part of this record. A functioning static deployment does not establish a remote AI service or scientific truth.

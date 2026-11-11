@@ -32,7 +32,9 @@ The [Microsoft implementation](../../docs/TRIAD-MICROSOFT.md) passed **17/17** o
 
 The scientific/data Python suite passed **39/39**, and the synthetic archive importer passed **19/19**, using the existing Python 3.14.7/SymPy 1.14.0 scientific environment. The public validator reported 34 claims, 13 canonical records and 20 sources with zero issues; the 13-object canonical dependency graph was acyclic. The build copied 25 allowlisted public source assets plus static support pages.
 
-The intermediate root browser checkpoint had a mobile-overflow failure (25/26). After correction the full built suite passed 26/26, and fresh desktop/mobile screenshots were visually inspected. The earlier failure is retained as review history, not silently reclassified. Hosted Linux CI and deployment remain pending. No Triad public deployment, remote HTTPS MCP endpoint, ChatGPT registration or OAuth integration is claimed.
+The intermediate root browser checkpoint had a mobile-overflow failure (25/26). After correction the full built suite passed 26/26, and fresh desktop/mobile screenshots were visually inspected. The earlier failure is retained as review history, not silently reclassified.
+
+Publication update, 2026-11-11 14:27 UTC: [PR #3](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/pull/3) merged as `5c89e71151d31c65bd2e5cdc78554327dff5dc1e` after hosted Linux validation. An earlier CI setup attempt was cancelled because Ubuntu package downloads repeatedly timed out; the bounded replacement uses the runner's installed Chrome. Main validation and Pages deployment passed. Live checks of the Triad and original atlas matched committed asset hashes, exercised their interactions and recorded no page errors. [Verification record](../../docs/TRIAD-VERIFICATION.md). Remote HTTPS MCP hosting, ChatGPT registration, OAuth, live provider inference and real Wolfram execution remain unverified.
 
 ## Consequences and unresolved work
 
