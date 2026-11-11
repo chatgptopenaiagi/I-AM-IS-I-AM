@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-11-11T13:55:58Z",
+  "scope": "Bounded existing-inventory and named-path checks; credential presence only. No global absence claim.",
+  "prior_inventory": "PC-FULL-DISCOVERY-2026/evidence (same workstation, 2026-11-11)",
+  "existing_dotnet_sdks": ["5.0.416", "8.0.428", "10.0.401", "10.0.403", "11.0.100-preview.7.26381.103"],
+  "prior_matching_python_packages": [],
+  "prior_matching_nuget_package_directories": [],
+  "matched_package_prefixes": ["agent-framework", "semantic-kernel", "autogen", "azure-", "Microsoft.Agents", "Microsoft.Extensions.AI", "Azure.Identity", "Azure.AI"],
+  "azure_cli_named_windows_paths_present": false,
+  "azure_cli_on_path": false,
+  "portable_ollama_executable_present": true,
+  "portable_ollama_location": "C:\\ollama-windows-amd64\\ollama.exe",
+  "ollama_server_started_or_contacted": false,
+  "environment_presence_checked_process_user_machine": {
+    "FOUNDRY_PROJECT_ENDPOINT": false,
+    "FOUNDRY_MODEL": false,
+    "AZURE_AI_PROJECT_ENDPOINT": false,
+    "AZURE_AI_MODEL_DEPLOYMENT_NAME": false,
+    "AZURE_TENANT_ID": false,
+    "AZURE_CLIENT_ID": false,
+    "AZURE_CLIENT_SECRET": false,
+    "OLLAMA_HOST": false,
+    "OLLAMA_MODEL": false,
+    "OLLAMA_MODEL_ID": false
+  },
+  "isolated_runtime": "services/microsoft/.venv",
+  "python": "3.14.7",
+  "installed_for_this_task": {
+    "agent-framework-core": "1.25.0",
+    "agent-framework-foundry": "1.16.1",
+    "agent-framework-ollama": "1.0.0b261106",
+    "azure-identity": "1.27.0",
+    "azure-ai-projects": "2.9.0"
+  },
+  "model_request_executed": false,
+  "provider_state": "NOT CONFIGURED",
+  "limitations": [
+    "Prior package inventory and targeted NuGet/CLI metadata checks do not enumerate every possible portable SDK.",
+    "No credential files, token caches, passwords, API keys, or environment secret values were displayed.",
+    "An Ollama executable does not prove an available model or working local service.",
+    "Actual SDK construction and synthetic tool-loop tests do not prove a live provider works."
+  ]
+}

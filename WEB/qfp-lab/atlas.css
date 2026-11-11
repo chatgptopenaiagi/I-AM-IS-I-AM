@@ -862,6 +862,8 @@ hr {
     order: 3;
     width: 100%;
     justify-content: stretch;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .site-header nav button {
     flex: 1;
@@ -1037,4 +1039,10 @@ h1 {
   .plot-panel .mapping {
     font-size: 0.75rem;
   }
+}
+
+.triad-entry {
+  font-size: 0.82rem;
+  padding: 0.6rem;
+  text-align: center;
 }

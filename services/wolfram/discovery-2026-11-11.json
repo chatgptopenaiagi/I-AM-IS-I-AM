@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-11-11T14:45:57+01:00",
+  "status": "UNAVAILABLE_IN_BOUNDED_DISCOVERY",
+  "runtime_executed": false,
+  "runtime_version": null,
+  "cross_engine_comparisons_executed": 0,
+  "wolfram_graphics_generated": 0,
+  "checks": [
+    {"source": "PowerShell Get-Command", "names": ["wolframscript", "WolframKernel", "MathKernel", "math", "Mathematica"], "matches": 0},
+    {"source": "HKLM native/WOW6432Node and HKCU uninstall entries", "filter": "Wolfram|Mathematica", "matches": 0},
+    {"source": "Known directories", "paths": ["C:\\Program Files\\Wolfram Research", "C:\\Program Files\\Wolfram", "C:\\Program Files (x86)\\Wolfram Research"], "existing": 0},
+    {"source": "Top-level directory names only", "roots": ["Program Files", "Program Files (x86)", "ProgramData", "current user LocalAppData", "current user AppData"], "filter": "Wolfram|Mathematica", "matches": 0},
+    {"source": "Existing PC-FULL-DISCOVERY-2026 inventory", "files": ["SOFTWARE-REGISTRY.json", "02-INSTALLED-SOFTWARE.md", "04-PROGRAMMING-TOOLCHAINS.md"], "filter": "Wolfram|Mathematica", "matches": 0},
+    {"source": "services/wolfram/verify.mjs", "result": "UNAVAILABLE: no explicit local wolframscript executable configured", "is_runtime_test": false}
+  ],
+  "limitations": [
+    "Not an exhaustive drive search: portable copies, other users, remote kernels and unlisted custom paths are not excluded.",
+    "No activation/license files were inspected; no licensing audit was performed.",
+    "No runtime was installed, activated, downloaded or connected to a cloud/remote kernel.",
+    "Wolfram source, interactive Manipulate and SVG/PNG export are implemented but NOT EXECUTED on this host.",
+    "JavaScript parser fixtures are synthetic and do not count as Wolfram execution."
+  ]
+}

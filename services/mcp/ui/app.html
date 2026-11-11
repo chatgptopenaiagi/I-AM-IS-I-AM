@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRIAD research lab</title>
+<style>
+:root{color-scheme:light dark;font:15px/1.5 system-ui,sans-serif}body{margin:0;padding:22px;background:light-dark(#f6f3eb,#111c24);color:light-dark(#172a36,#e7ecec)}h1{font:600 25px Georgia,serif;margin:0}header p{margin:4px 0 18px;color:light-dark(#455c64,#b3c6cc)}label{display:block;margin:12px 0 4px}select,input,button{font:inherit;border:1px solid #82979e;border-radius:8px;padding:8px;background:light-dark(white,#1c303c);color:inherit}select{max-width:100%;width:100%}button{cursor:pointer;background:#176c70;color:white;margin:12px 6px 0 0}button:disabled{opacity:.5;cursor:wait}input{width:130px}#parameters{display:flex;gap:12px;flex-wrap:wrap}.axis{display:inline-block;border:1px solid #82979e;border-radius:20px;padding:3px 10px;margin:8px 5px 0 0;font-size:12px}article{border-block:1px solid #82979e;margin:16px 0;padding:12px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:light-dark(#e8eeed,#172b36);padding:12px;border-radius:8px;font-size:12px;max-height:350px;overflow:auto}small{display:block}#status{min-height:24px}h2{font-size:18px}a{color:inherit}:focus-visible{outline:3px solid #dd8b36;outline-offset:3px}
+</style></head><body>
+<header><h1>TRIAD · Research lab</h1><p>Inspect the record. Test a defined model. Keep the limits visible.</p></header>
+<p id="status" role="status" aria-live="polite">Connecting to an MCP Apps host…</p>
+<label for="object">Research object</label><select id="object" disabled></select>
+<article><h2 id="title">Public research atlas</h2><div id="axes"></div><p id="statement"></p><details><summary>Assumptions, units and limitations</summary><pre id="record"></pre></details></article>
+<section aria-label="Bounded experiment"><label for="experiment">Available experiment</label><select id="experiment" disabled></select><div id="parameters"></div><button id="run" disabled>Run fixed experiment</button><button id="context" disabled>Share selection with chat</button><small>Computations evaluate stated definitions or conditional identities. They do not establish empirical support.</small></section>
+<pre id="result" aria-live="polite">No computation has run.</pre>
+<!-- APP_SCRIPT --></body></html>

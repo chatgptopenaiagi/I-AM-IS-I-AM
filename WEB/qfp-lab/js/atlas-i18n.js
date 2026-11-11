@@ -1,5 +1,6 @@
 // Editorial visitor translations. Source quotations are never translated in place.
 export const ro = {
+  triad: "Laborator Triad ↗",
   skip: "Sari la experimente",
   atlas: "UN ATLAS INTERACTIV DE CERCETARE",
   routes: "Trasee pentru vizitatori",
