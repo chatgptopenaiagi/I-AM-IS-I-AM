@@ -14,3 +14,6 @@
 *.gif binary
 *.pdf binary
 *.zip binary
+
+# Unmodified, pinned optional rendering modules. Keep upstream formatting.
+WEB/qfp-lab/vendor/** linguist-vendored whitespace=-space-before-tab

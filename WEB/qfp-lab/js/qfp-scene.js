@@ -7,13 +7,16 @@ export function createScene(canvas) {
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   const scene = new THREE.Scene(); scene.background = new THREE.Color(0x071018);
   const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 100); camera.position.set(4, 3, 5);
-  const controls = new OrbitControls(camera, canvas); controls.enableDamping = true; controls.screenSpacePanning = true;
+  // Event-driven rendering: no perpetual animation; reduced-motion is respected.
+  const controls = new OrbitControls(camera, canvas); controls.enableDamping = false; controls.screenSpacePanning = true;
+  const draw = () => renderer.render(scene, camera);
+  controls.addEventListener('change', draw);
   scene.add(new THREE.HemisphereLight(0xaadfff, 0x17202b, 2.2));
   const axes = new THREE.AxesHelper(2.6); scene.add(axes);
   const grid = new THREE.GridHelper(6, 12, 0x31546b, 0x172b38); scene.add(grid);
   const origin = new THREE.Mesh(new THREE.SphereGeometry(.07, 20, 12), new THREE.MeshBasicMaterial({ color: 0xffffff })); scene.add(origin);
   const group = new THREE.Group(); scene.add(group);
-  function clear() { while (group.children.length) { const o = group.children.pop(); o.geometry?.dispose(); o.material?.dispose(); } }
+  function clear() { while (group.children.length) { const o = group.children[0]; group.remove(o); o.geometry?.dispose(); o.material?.dispose(); } }
   function curve(fn, color, scale = 1) {
     const points = Array.from({ length: 121 }, (_, i) => { const r = i / 120; return new THREE.Vector3((r * 2 - 1) * 2.2, fn(Math.abs(r * 2 - 1)) * scale, 0); });
     group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), new THREE.LineBasicMaterial({ color })));
@@ -32,9 +35,9 @@ export function createScene(canvas) {
     } else if (mode === 'metric') {
       curve((x) => NAtRadius(x * rm, state.m3), 0xf1728d, 1.2); [0.33, .66, 1].forEach(f => shell(f * 2.2, 0xf1728d, .12));
     } else { [0.3, .55, .8, 1].forEach((f, i) => shell(f * 2.2, [0x2ca8c2,0x8edb75,0xc7a5ff,0xffb454][i], .2)); }
+    draw();
   }
-  function resize() { const box = canvas.getBoundingClientRect(); renderer.setSize(box.width, box.height, false); camera.aspect = box.width / Math.max(1, box.height); camera.updateProjectionMatrix(); }
+  function resize() { const box = canvas.getBoundingClientRect(); renderer.setSize(box.width, box.height, false); camera.aspect = Math.max(1,box.width) / Math.max(1, box.height); camera.updateProjectionMatrix(); draw(); }
   new ResizeObserver(resize).observe(canvas); resize();
-  renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
   return { update };
 }

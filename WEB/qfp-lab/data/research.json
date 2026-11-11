@@ -1,0 +1,3195 @@
+{
+  "schema_version": "1.0",
+  "metadata": {
+    "title": "I-AM-IS-I-AM Research Atlas",
+    "title_ro": "Atlas de cercetare I-AM-IS-I-AM",
+    "generated_at": "2026-11-11",
+    "canonical_snapshot": "6fa0f1f",
+    "canonical_registry_path": "00_FOUNDATION/qfp_claim_registry.json",
+    "scope": "Curated research navigation; not a complete chat archive, canonical status promotion or empirical confirmation.",
+    "coverage": "Five candidate saved drafts inspected; 13 canonical registry records adapted; 15 historical/owner records, three present review records and three explanatory mathematical models.",
+    "limitations": [
+      "No complete ChatGPT history/API/export was recovered.",
+      "File dates are not message dates; speaker and model identity are unknown unless explicitly sourced.",
+      "Private full texts and identifiers are retained outside the repository."
+    ]
+  },
+  "branches": [
+    {
+      "id": "being",
+      "title": "Being / I-AM",
+      "title_ro": "Ființă / I-AM",
+      "summary": "Philosophical being, unity and first-person presence.",
+      "summary_ro": "Ființă filosofică, unitate și prezență la persoana întâi."
+    },
+    {
+      "id": "projection",
+      "title": "Continuum and projection",
+      "title_ro": "Continuu și proiecție",
+      "summary": "Continuum, embedded observers and the distinction between projection and slicing.",
+      "summary_ro": "Continuu, observatori incluși și distincția dintre proiecție și secțiune."
+    },
+    {
+      "id": "access",
+      "title": "Access and admissibility",
+      "title_ro": "Acces și admisibilitate",
+      "summary": "Admissible states, local access and constrained histories.",
+      "summary_ro": "Stări admisibile, acces local și istorii constrânse."
+    },
+    {
+      "id": "qfp",
+      "title": "QFP gravitation",
+      "title_ro": "Gravitație QFP",
+      "summary": "Protected action, conditional local derivations and explicit validation boundaries.",
+      "summary_ro": "Acțiune protejată, derivări locale condiționate și limite explicite ale validării."
+    },
+    {
+      "id": "scale",
+      "title": "Micro / macro exploration",
+      "title_ro": "Explorare micro / macro",
+      "summary": "Positive scale coordinates and a separate speculative emergence branch.",
+      "summary_ro": "Coordonate pozitive de scară și o ramură separată de emergență speculativă."
+    }
+  ],
+  "claims": [
+    {
+      "id": "QFP-M001",
+      "title": "Scalar-tensor-Gauss-Bonnet protected working action",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": "WORKING MODEL",
+      "epistemic_status": null,
+      "domain": [
+        "LOCAL"
+      ],
+      "depends_on": [
+        "QFP-C001"
+      ],
+      "statement": "S = integral d^4x sqrt(-g) [F(Phi) R - 1/2 grad(Phi).grad(Phi) - V(Phi) + alpha H(Phi) G]",
+      "original_wording": "S = integral d^4x sqrt(-g) [F(Phi) R - 1/2 grad(Phi).grad(Phi) - V(Phi) + alpha H(Phi) G]",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-02",
+        "SRC-REPO-03"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [
+        "S = integral d^4x sqrt(-g) [F(Phi) R - 1/2 grad(Phi).grad(Phi) - V(Phi) + alpha H(Phi) G]"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "AGENTS.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/AGENTS.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/Conventions_and_Notation.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/Conventions_and_Notation.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [],
+      "title_ro": "Acțiunea de lucru scalar–tensor–Gauss–Bonnet",
+      "statement_ro": "Modelul de lucru folosește o acțiune scalar–tensor cu termen Gauss–Bonnet. Alegerea acțiunii nu demonstrează validitatea ei fizică.",
+      "paraphrase_ro": "Modelul de lucru folosește o acțiune scalar–tensor cu termen Gauss–Bonnet. Alegerea acțiunii nu demonstrează validitatea ei fizică.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-A001",
+      "title": "Independence of F(Phi) and H(Phi)",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": "ASSUMPTION",
+      "epistemic_status": null,
+      "domain": [
+        "LOCAL",
+        "GLOBAL"
+      ],
+      "depends_on": [],
+      "statement": "Independence of F(Phi) and H(Phi)",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-02",
+        "SRC-REPO-03"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "AGENTS.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/AGENTS.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/Conventions_and_Notation.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/Conventions_and_Notation.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [],
+      "title_ro": "Independența funcțiilor F(Phi) și H(Phi)",
+      "statement_ro": "F(Phi) și H(Phi) sunt funcții de cuplaj independente, până când o derivare explicită ar stabili o relație.",
+      "paraphrase_ro": "F(Phi) și H(Phi) sunt funcții de cuplaj independente, până când o derivare explicită ar stabili o relație.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-C001",
+      "title": "Canonical curvature convention and definitions",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": "DEFINITION",
+      "epistemic_status": null,
+      "domain": [
+        "LOCAL",
+        "GLOBAL",
+        "COORDINATE-PATCH"
+      ],
+      "depends_on": [],
+      "statement": "Canonical curvature convention and definitions",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-03"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [
+        "Canonical curvature convention and definitions"
+      ],
+      "equations": [],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/Conventions_and_Notation.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/Conventions_and_Notation.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [],
+      "title_ro": "Convenția canonică de curbură",
+      "statement_ro": "Semnele curburii și contracțiile sunt fixate de convențiile canonice; formulele din convenții opuse nu se amestecă.",
+      "paraphrase_ro": "Semnele curburii și contracțiile sunt fixate de convențiile canonice; formulele din convenții opuse nu se amestecă.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-NOT001",
+      "title": "Scalar d'Alembertian notation",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": "NOTATION",
+      "epistemic_status": null,
+      "domain": [
+        "LOCAL",
+        "GLOBAL"
+      ],
+      "depends_on": [],
+      "statement": "Box Phi = nabla_mu nabla^mu Phi = g^(mu nu) nabla_mu nabla_nu Phi",
+      "original_wording": "Box Phi = nabla_mu nabla^mu Phi = g^(mu nu) nabla_mu nabla_nu Phi",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-03"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [
+        "Box Phi = nabla_mu nabla^mu Phi = g^(mu nu) nabla_mu nabla_nu Phi"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/Conventions_and_Notation.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/Conventions_and_Notation.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [],
+      "title_ro": "Notația d'Alembertianului scalar",
+      "statement_ro": "Box Phi desemnează d'Alembertianul covariant al câmpului scalar, în convențiile repository-ului.",
+      "paraphrase_ro": "Box Phi desemnează d'Alembertianul covariant al câmpului scalar, în convențiile repository-ului.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-A002",
+      "title": "Static spherical metric ansatz",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": "ANSATZ",
+      "epistemic_status": null,
+      "domain": [
+        "COORDINATE-PATCH",
+        "STATIC-SPHERICAL"
+      ],
+      "depends_on": [],
+      "statement": "ds^2 = -e^(2 delta(r)) N(r) dt^2 + dr^2/N(r) + r^2 dOmega^2",
+      "original_wording": "ds^2 = -e^(2 delta(r)) N(r) dt^2 + dr^2/N(r) + r^2 dOmega^2",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-02",
+        "SRC-REPO-03"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [
+        "ds^2 = -e^(2 delta(r)) N(r) dt^2 + dr^2/N(r) + r^2 dOmega^2"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "AGENTS.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/AGENTS.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/Conventions_and_Notation.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/Conventions_and_Notation.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [],
+      "title_ro": "Ansatz metric static și sferic",
+      "statement_ro": "Se alege o metrică statică, cu simetrie sferică. Această restricție nu dovedește unicitatea sau validitatea fizică a geometriei.",
+      "paraphrase_ro": "Se alege o metrică statică, cu simetrie sferică. Această restricție nu dovedește unicitatea sau validitatea fizică a geometriei.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-DEF001",
+      "title": "Mass-function definition",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": "DEFINITION",
+      "epistemic_status": null,
+      "domain": [
+        "COORDINATE-PATCH",
+        "STATIC-SPHERICAL"
+      ],
+      "depends_on": [],
+      "statement": "N(r) = 1 - 2 m(r)/r",
+      "original_wording": "N(r) = 1 - 2 m(r)/r",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-02",
+        "SRC-REPO-03"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [
+        "Mass-function definition"
+      ],
+      "equations": [
+        "N(r) = 1 - 2 m(r)/r"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "AGENTS.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/AGENTS.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/Conventions_and_Notation.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/Conventions_and_Notation.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [],
+      "title_ro": "Definiția funcției de masă",
+      "statement_ro": "Funcția de masă este definită prin N(r)=1−2m(r)/r.",
+      "paraphrase_ro": "Funcția de masă este definită prin N(r)=1−2m(r)/r.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-A003",
+      "title": "Regular-center expansion ansatz",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": "ANSATZ",
+      "epistemic_status": null,
+      "domain": [
+        "LOCAL",
+        "REGULAR-CENTER"
+      ],
+      "depends_on": [
+        "QFP-A002",
+        "QFP-DEF001"
+      ],
+      "statement": "m(r) = m3 r^3 + O(r^5); delta(r) = delta0 + delta2 r^2 + O(r^4); Phi(r) = Phi0 + Phi2 r^2 + O(r^4)",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-02",
+        "SRC-REPO-03"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [
+        "m(r) = m3 r^3 + O(r^5)",
+        "delta(r) = delta0 + delta2 r^2 + O(r^4)",
+        "Phi(r) = Phi0 + Phi2 r^2 + O(r^4)"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "AGENTS.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/AGENTS.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/Conventions_and_Notation.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/Conventions_and_Notation.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [],
+      "title_ro": "Dezvoltarea locală în centrul regulat",
+      "statement_ro": "Seriile locale pentru m, delta și Phi păstrează explicit ordinul termenilor omiși; nu sunt soluții globale.",
+      "paraphrase_ro": "Seriile locale pentru m, delta și Phi păstrează explicit ordinul termenilor omiși; nu sunt soluții globale.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-D001",
+      "title": "Covariant scalar Euler-Lagrange equation",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": null,
+      "epistemic_status": "DERIVED",
+      "domain": [
+        "LOCAL"
+      ],
+      "depends_on": [
+        "QFP-M001",
+        "QFP-C001",
+        "QFP-NOT001"
+      ],
+      "statement": "Box Phi + F'(Phi) R - V'(Phi) + alpha H'(Phi) G = 0",
+      "original_wording": "Box Phi + F'(Phi) R - V'(Phi) + alpha H'(Phi) G = 0",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-04",
+        "SRC-REPO-05"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [
+        "Box Phi + F'(Phi) R - V'(Phi) + alpha H'(Phi) G = 0"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/derivations/Scalar_Euler_Lagrange_Derivation.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/derivations/Scalar_Euler_Lagrange_Derivation.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "12_VALIDATION/limiting_cases/Scalar_Equation_Validation.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/12_VALIDATION/limiting_cases/Scalar_Equation_Validation.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [
+        {
+          "method": "ANALYTIC DERIVATION",
+          "role": "PRIMARY"
+        },
+        {
+          "method": "DIMENSIONAL CHECK",
+          "outcome": "PASS"
+        },
+        {
+          "method": "LIMITING-CASE TEST",
+          "outcome": "PASS"
+        }
+      ],
+      "title_ro": "Ecuația covariantă Euler–Lagrange pentru scalar",
+      "statement_ro": "Variația scalară a acțiunii produce ecuația afișată, în condițiile locale și de frontieră declarate. Ea nu înlocuiește ecuațiile metrice.",
+      "paraphrase_ro": "Variația scalară a acțiunii produce ecuația afișată, în condițiile locale și de frontieră declarate. Ea nu înlocuiește ecuațiile metrice.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-D002",
+      "title": "Regular-center scalar d'Alembertian",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": null,
+      "epistemic_status": "DERIVED",
+      "domain": [
+        "LOCAL",
+        "REGULAR-CENTER"
+      ],
+      "depends_on": [
+        "QFP-A003",
+        "QFP-NOT001"
+      ],
+      "statement": "Box Phi(0) = 6 Phi2",
+      "original_wording": "Box Phi(0) = 6 Phi2",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-06",
+        "SRC-REPO-07"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [
+        "Box Phi(0) = 6 Phi2"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "12_VALIDATION/regularity/Scalar_Regular_Center_Test.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/12_VALIDATION/regularity/Scalar_Regular_Center_Test.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [
+        {
+          "method": "ANALYTIC DERIVATION",
+          "role": "PRIMARY"
+        },
+        {
+          "method": "SYMBOLIC COMPUTATION",
+          "role": "INDEPENDENT CROSS-CHECK",
+          "outcome": "PASS"
+        }
+      ],
+      "title_ro": "D'Alembertianul scalar în centru",
+      "statement_ro": "În ansatzul local de centru regulat, limita d'Alembertianului este 6 Phi2.",
+      "paraphrase_ro": "În ansatzul local de centru regulat, limita d'Alembertianului este 6 Phi2.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-D003",
+      "title": "Regular-center Ricci scalar",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": null,
+      "epistemic_status": "DERIVED",
+      "domain": [
+        "LOCAL",
+        "REGULAR-CENTER"
+      ],
+      "depends_on": [
+        "QFP-A003",
+        "QFP-C001"
+      ],
+      "statement": "R(0) = 24 m3 - 12 delta2",
+      "original_wording": "R(0) = 24 m3 - 12 delta2",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-06",
+        "SRC-REPO-07"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [
+        "R(0) = 24 m3 - 12 delta2"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "12_VALIDATION/regularity/Scalar_Regular_Center_Test.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/12_VALIDATION/regularity/Scalar_Regular_Center_Test.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [
+        {
+          "method": "ANALYTIC DERIVATION",
+          "role": "PRIMARY"
+        },
+        {
+          "method": "SYMBOLIC COMPUTATION",
+          "role": "INDEPENDENT CROSS-CHECK",
+          "outcome": "PASS"
+        },
+        {
+          "method": "LIMITING-CASE TEST",
+          "case": "DE SITTER",
+          "outcome": "PASS"
+        }
+      ],
+      "title_ro": "Scalarul Ricci în centru",
+      "statement_ro": "În convenția canonică și dezvoltarea locală adoptată, R(0)=24m3−12delta2.",
+      "paraphrase_ro": "În convenția canonică și dezvoltarea locală adoptată, R(0)=24m3−12delta2.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-D004",
+      "title": "Regular-center Gauss-Bonnet invariant",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": null,
+      "epistemic_status": "DERIVED",
+      "domain": [
+        "LOCAL",
+        "REGULAR-CENTER"
+      ],
+      "depends_on": [
+        "QFP-A003",
+        "QFP-C001"
+      ],
+      "statement": "G(0) = 96 m3 (m3 - delta2)",
+      "original_wording": "G(0) = 96 m3 (m3 - delta2)",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-06",
+        "SRC-REPO-07"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [
+        "G(0) = 96 m3 (m3 - delta2)"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "12_VALIDATION/regularity/Scalar_Regular_Center_Test.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/12_VALIDATION/regularity/Scalar_Regular_Center_Test.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [
+        {
+          "method": "ANALYTIC DERIVATION",
+          "role": "PRIMARY"
+        },
+        {
+          "method": "SYMBOLIC COMPUTATION",
+          "role": "INDEPENDENT CROSS-CHECK",
+          "outcome": "PASS"
+        },
+        {
+          "method": "LIMITING-CASE TEST",
+          "case": "DE SITTER",
+          "outcome": "PASS"
+        }
+      ],
+      "title_ro": "Invariantul Gauss–Bonnet în centru",
+      "statement_ro": "În aceeași convenție și dezvoltare locală, G(0)=96m3(m3−delta2).",
+      "paraphrase_ro": "În aceeași convenție și dezvoltare locală, G(0)=96m3(m3−delta2).",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-D005",
+      "title": "Central scalar relation",
+      "branch": "qfp",
+      "label": "canonical",
+      "object_type": null,
+      "epistemic_status": "DERIVED",
+      "domain": [
+        "LOCAL",
+        "REGULAR-CENTER"
+      ],
+      "depends_on": [
+        "QFP-D001",
+        "QFP-D002",
+        "QFP-D003",
+        "QFP-D004"
+      ],
+      "statement": "6 Phi2 - V'(Phi0) + (24 m3 - 12 delta2) F'(Phi0) + 96 alpha m3 (m3 - delta2) H'(Phi0) = 0",
+      "original_wording": "6 Phi2 - V'(Phi0) + (24 m3 - 12 delta2) F'(Phi0) + 96 alpha m3 (m3 - delta2) H'(Phi0) = 0",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-06",
+        "SRC-REPO-07",
+        "SRC-REPO-08"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "Protected action and canonical conventions where materially applicable.",
+        "Local results stay within their registered domain and retained expansion order."
+      ],
+      "definitions": [],
+      "equations": [
+        "6 Phi2 - V'(Phi0) + (24 m3 - 12 delta2) F'(Phi0) + 96 alpha m3 (m3 - delta2) H'(Phi0) = 0"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "12_VALIDATION/regularity/Scalar_Regular_Center_Test.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/12_VALIDATION/regularity/Scalar_Regular_Center_Test.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "11_RESEARCH_LOG/2026/2026-08-09_center-relations-promoted-to-derived.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/11_RESEARCH_LOG/2026/2026-08-09_center-relations-promoted-to-derived.md"
+        }
+      ],
+      "limitations": [
+        "No global solution, stability, empirical validity or engineering efficacy follows from a local relation."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {
+        "system": "natural units c=hbar=1; G_N explicit",
+        "Phi": "M",
+        "F": "M^2",
+        "H": "1",
+        "alpha": "1",
+        "V": "M^4",
+        "R": "M^2",
+        "G": "M^4",
+        "m": "M^-1",
+        "m3": "M^2",
+        "delta2": "M^2",
+        "Phi2": "M^3"
+      },
+      "validation": [
+        {
+          "method": "ANALYTIC DERIVATION",
+          "role": "PRIMARY"
+        },
+        {
+          "method": "DIMENSIONAL CHECK",
+          "outcome": "PASS"
+        },
+        {
+          "method": "INDEPENDENT AUDIT",
+          "outcome": "EXACT MATCH"
+        }
+      ],
+      "title_ro": "Relația scalară centrală",
+      "statement_ro": "Înlocuirea invarianților centrali în ecuația scalară produce relația centrală afișată. Ea nu dovedește existența unei soluții globale.",
+      "paraphrase_ro": "Înlocuirea invarianților centrali în ecuația scalară produce relația centrală afișată. Ea nu dovedește existența unei soluții globale.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "QFP-S001",
+      "title": "Continuum-Projection ontology",
+      "branch": "projection",
+      "label": "canonical",
+      "object_type": "SCHEMA",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [],
+      "statement": "C -> Sigma; C_4D -> Sigma_3D; Observer in Sigma",
+      "original_wording": "C -> Sigma; C_4D -> Sigma_3D; Observer in Sigma",
+      "editorial_paraphrase": false,
+      "speaker": "Canonical QFP repository",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-REPO-02",
+        "SRC-REPO-09"
+      ],
+      "source_date": "2026-08-09",
+      "date_basis": "repository research-log date; not creation/conception date",
+      "assumptions": [
+        "C, Sigma, projection and observer embedding remain mathematical research questions."
+      ],
+      "definitions": [],
+      "equations": [
+        "C -> Sigma; C_4D -> Sigma_3D; Observer in Sigma"
+      ],
+      "evidence": [
+        {
+          "kind": "repository record",
+          "path": "AGENTS.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/AGENTS.md"
+        },
+        {
+          "kind": "repository record",
+          "path": "README.md",
+          "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/README.md"
+        }
+      ],
+      "limitations": [
+        "No demonstrated physical projection mechanism; domain is unassigned in canonical registry."
+      ],
+      "revision": "canonical snapshot 6fa0f1f; display adapter only",
+      "units": {},
+      "validation": [],
+      "title_ro": "Ontologia continuu–proiecție",
+      "statement_ro": "C → Sigma, C_4D → Sigma_3D și observatorul în Sigma sunt scheme de cercetare; mecanismul fizic de proiecție nu este demonstrat.",
+      "paraphrase_ro": "C → Sigma, C_4D → Sigma_3D și observatorul în Sigma sunt scheme de cercetare; mecanismul fizic de proiecție nu este demonstrat.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless.",
+      "presentation_qualifier": "SCHEMATIC"
+    },
+    {
+      "id": "ATLAS-BEING",
+      "title": "I-AM and first-person presence",
+      "branch": "being",
+      "label": "owner-summary",
+      "object_type": "SCHEMA",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [],
+      "statement": "The owner places being, unity and first-person presence at the philosophical root of the research program. This is an ontological orientation, not a measured field or established physical explanation.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "source_date": "2026-11-11",
+      "date_basis": "date supplied to this mission; described historical dates remain unverified leads",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "No original transcript recovered for this framing.",
+        "Comparisons with Advaita, Ajata, Kashmir Shaivism, Buddhism and biblical self-reference require distinct contexts; they are not interchangeable theories."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "title_ro": "I-AM și prezența la persoana întâi",
+      "statement_ro": "Proprietarul plasează ființa, unitatea și prezența la persoana întâi la originea filosofică a programului. Acestea nu sunt, prin simpla formulare, mărimi fizice măsurate.",
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "This is a philosophical proposition or interpretive schema. It has no empirical prediction as presently stated; no prediction is manufactured for the atlas."
+      },
+      "paraphrase_ro": "Proprietarul plasează ființa, unitatea și prezența la persoana întâi la originea filosofică a programului. Acestea nu sunt, prin simpla formulare, mărimi fizice măsurate.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_APPLICABLE",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-INFINITE-SHEET",
+      "title": "Infinite-dimensional sheet and folding intuition",
+      "branch": "projection",
+      "label": "owner-summary",
+      "object_type": "SCHEMA",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [],
+      "statement": "An owner-supplied summary attributes an infinite-dimensional sheet/folding intuition to the author and a QUFC mathematical formulation to an assistant in a conversation dated 18 November 2025.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Owner summary attributes intuition to author, QUFC formulation to assistant; original roles unverified",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "source_date": "2026-11-11",
+      "date_basis": "date supplied to this mission; described historical dates remain unverified leads",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "The date, role attribution and terminology are summary-level leads; full transcript and model metadata are missing.",
+        "An infinite-dimensional metaphor is not a defined manifold or a derivation."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "reported_event_date": "2025-11-18",
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Intuiția foii infinit-dimensionale și a plierii",
+      "statement_ro": "Un rezumat furnizat de proprietar atribuie autorului intuiția unei foi infinit-dimensionale și a plierii, iar unui asistent formularea QUFC. Conversația raportată din 18 noiembrie 2025 nu a fost recuperată.",
+      "paraphrase_ro": "Un rezumat furnizat de proprietar atribuie autorului intuiția unei foi infinit-dimensionale și a plierii, iar unui asistent formularea QUFC. Conversația raportată din 18 noiembrie 2025 nu a fost recuperată.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-EMBEDDED-OBSERVER",
+      "title": "Embedded observer and C_4D → Sigma_3D",
+      "branch": "projection",
+      "label": "owner-summary",
+      "object_type": "SCHEMA",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [
+        "QFP-S001"
+      ],
+      "statement": "A reported Continuum-Projection Ontology PDF explores undivided unity, a C_4D to Sigma_3D schema, an author-defined E_A map, and an observer within the projected structure.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "source_date": "2026-11-11",
+      "date_basis": "date supplied to this mission; described historical dates remain unverified leads",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [
+        "C_4D -> Sigma_3D",
+        "E_A: domain and codomain not recovered"
+      ],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "30 June 2026 is reported file metadata, not a conception or conversation date.",
+        "The original PDF was not recovered; slicing, projection and embedding must remain distinct operations.",
+        "The relationship between E_A and canonical C -> Sigma remains undeveloped."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "reported_event_date": "2026-06-30",
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Observatorul inclus și C_4D → Sigma_3D",
+      "statement_ro": "Un PDF raportat explorează unitatea nedivizată, schema C_4D → Sigma_3D, o aplicație E_A și un observator inclus în structură. PDF-ul original și definițiile complete nu au fost recuperate.",
+      "paraphrase_ro": "Un PDF raportat explorează unitatea nedivizată, schema C_4D → Sigma_3D, o aplicație E_A și un observator inclus în structură. PDF-ul original și definițiile complete nu au fost recuperate.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-ACCESS",
+      "title": "Reality as an accessibility structure",
+      "branch": "access",
+      "label": "owner-summary",
+      "object_type": "SCHEMA",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [],
+      "statement": "A reported 29 September 2026 conversation title organizes the ontology around admissible possibilities, localized access and constrained histories. The Principle of Non-Reduction of Access is a named research lead, not a recovered theorem.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "source_date": "2026-11-11",
+      "date_basis": "date supplied to this mission; described historical dates remain unverified leads",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "No supplied state space, admissibility relation, dynamics, measure or empirical procedure.",
+        "Universal accessibility must not be conflated with what a single observer can access.",
+        "Original wording and model attribution remain unavailable."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "reported_event_date": "2026-09-29",
+      "title_ro": "Realitatea ca structură de accesibilitate",
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "This is a philosophical proposition or interpretive schema. It has no empirical prediction as presently stated; no prediction is manufactured for the atlas."
+      },
+      "statement_ro": "Un titlu de conversație raportat organizează ontologia prin posibilități admisibile, acces localizat și istorii constrânse. Principiul de Nereducere a Accesului este o pistă de cercetare, nu o teoremă recuperată.",
+      "paraphrase_ro": "Un titlu de conversație raportat organizează ontologia prin posibilități admisibile, acces localizat și istorii constrânse. Principiul de Nereducere a Accesului este o pistă de cercetare, nu o teoremă recuperată.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-SELF-REFERENCE",
+      "title": "Self-reference and two infinity labels",
+      "branch": "being",
+      "label": "owner-summary",
+      "object_type": "NOTATION",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [],
+      "statement": "An owner summary of 14 August 2026 discussions distinguishes Infinity_EXT and Infinity_INT and asks whether proposed correspondences are formal relations, interpretive analogies or poetic resonances.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "source_date": "2026-11-11",
+      "date_basis": "date supplied to this mission; described historical dates remain unverified leads",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [
+        "Infinity_EXT",
+        "Infinity_INT"
+      ],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "These names do not define mathematical cardinalities or topologies.",
+        "Fibonacci analogies need an explicit construction and falsifiable comparison; resemblance alone is not evidence."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "reported_event_date": "2026-08-14",
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "This is a philosophical proposition or interpretive schema. It has no empirical prediction as presently stated; no prediction is manufactured for the atlas."
+      },
+      "title_ro": "Auto-referința și două etichete ale infinitului",
+      "statement_ro": "Rezumatul proprietarului distinge Infinity_EXT și Infinity_INT și separă corespondența formală, analogia interpretativă și rezonanța poetică. Etichetele nu definesc singure infinituri matematice.",
+      "paraphrase_ro": "Rezumatul proprietarului distinge Infinity_EXT și Infinity_INT și separă corespondența formală, analogia interpretativă și rezonanța poetică. Etichetele nu definesc singure infinituri matematice.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_APPLICABLE",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-SCALE-POLARITY",
+      "title": "Micro/macro polarity and filament emergence",
+      "branch": "scale",
+      "label": "owner-summary",
+      "object_type": "SCHEMA",
+      "epistemic_status": "SPECULATIVE",
+      "domain": [],
+      "depends_on": [],
+      "statement": "A visible-context lead dated 8 November 2026 proposes micro/macro polarity and possible string-like emergence as a separate exploratory branch.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "source_date": "2026-11-11",
+      "date_basis": "date supplied to this mission; described historical dates remain unverified leads",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "No recovered dynamics, scale, tension, observable or simulation establishing emergent physical strings.",
+        "A filament visualization is an illustration, not string theory or experimental evidence."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "reported_event_date": "2026-11-08",
+      "title_ro": "Polaritate micro/macro și emergență filamentală",
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "statement_ro": "O pistă raportată din 8 noiembrie 2026 propune polaritatea micro/macro și emergența unor structuri filiforme, într-o ramură exploratorie separată.",
+      "paraphrase_ro": "O pistă raportată din 8 noiembrie 2026 propune polaritatea micro/macro și emergența unor structuri filiforme, într-o ramură exploratorie separată.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-TOPOLOGY-LAYERS",
+      "title": "Curve, tube, overlap, center, event",
+      "branch": "projection",
+      "label": "historical-review",
+      "object_type": "SCHEMA",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [],
+      "statement": "The recovered topology draft distinguishes a skeleton curve, its finite-radius neighborhood, an overlap domain, a candidate center and a localized event. These five object types should not be conflated.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "SRC-HIST-TOPOLOGY"
+      ],
+      "source_date": "2026-06-11",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [
+        "Curve gamma != Tube T_epsilon != Overlap Omega != Center q != Event E"
+      ],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "A naming taxonomy does not define an event-production mechanism or establish pre-spacetime physics."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Curbă, tub, suprapunere, centru, eveniment",
+      "statement_ro": "Schița topologică separă curba de bază, tubul, domeniul de suprapunere, centrul candidat și evenimentul. O taxonomie nu constituie un mecanism fizic.",
+      "paraphrase_ro": "Schița topologică separă curba de bază, tubul, domeniul de suprapunere, centrul candidat și evenimentul. O taxonomie nu constituie un mecanism fizic.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-CURVE-FAMILY",
+      "title": "Layered lemniscatic curve family",
+      "branch": "projection",
+      "label": "historical-review",
+      "object_type": "ANSATZ",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [],
+      "statement": "The historical draft chooses a phase-shifted three-coordinate family of periodic curves for illustration.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "SRC-HIST-TOPOLOGY"
+      ],
+      "source_date": "2026-06-11",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [
+        "gamma_k(theta) = (a sin(theta), b sin(theta) cos(theta), c sin(n theta + phi_k))"
+      ],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "Nonzero tangent alone establishes immersion, not global injectivity.",
+        "Calling each curve embedded and also requiring genuine self-crossings needs a domain/geometry qualification.",
+        "The parameters are illustrative; physical lengths and evolution are unspecified."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Familie de curbe cu straturi și defazaj",
+      "statement_ro": "Schița istorică alege o familie de curbe periodice cu defazaj între straturi, pentru explorare geometrică. Parametrii nu au o calibrare fizică recuperată.",
+      "paraphrase_ro": "Schița istorică alege o familie de curbe periodice cu defazaj între straturi, pentru explorare geometrică. Parametrii nu au o calibrare fizică recuperată.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-TUBE-OVERLAP",
+      "title": "Tube overlap and projection crossings",
+      "branch": "projection",
+      "label": "historical-review",
+      "object_type": "DEFINITION",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [
+        "ATLAS-CURVE-FAMILY"
+      ],
+      "statement": "The draft defines a radius-epsilon neighborhood using Euclidean distance and a multi-tube overlap. A crossing in a two-dimensional rendering need not be a spatial intersection.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "SRC-HIST-TOPOLOGY",
+        "SRC-MIT-PROJECTION"
+      ],
+      "source_date": "2026-06-11",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [
+        "T_epsilon(gamma) = {x in R^3 : d(x,gamma) < epsilon}",
+        "Omega_j = intersection_k T_epsilon(gamma_k)"
+      ],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "A nonempty open overlap has positive volume, but its existence alone establishes neither unique center nor physical interaction.",
+        "Choice of epsilon and domain must be stated."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Suprapunerea tuburilor și intersecția proiecțiilor",
+      "statement_ro": "Tuburile sunt definite prin distanță euclidiană, iar suprapunerea prin intersecția lor. O intersecție vizibilă în proiecție nu implică o intersecție în spațiu.",
+      "paraphrase_ro": "Tuburile sunt definite prin distanță euclidiană, iar suprapunerea prin intersecția lor. O intersecție vizibilă în proiecție nu implică o intersecție în spațiu.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-CENTER-UNIQUENESS",
+      "title": "Candidate overlap center, uniqueness unresolved",
+      "branch": "projection",
+      "label": "historical-review",
+      "object_type": "DEFINITION",
+      "epistemic_status": "CONJECTURE",
+      "domain": [],
+      "depends_on": [
+        "ATLAS-TUBE-OVERLAP"
+      ],
+      "statement": "The draft selects an overlap center by minimizing a sum of squared distances to curves and asserts uniqueness. The minimization prescription is recorded; existence and uniqueness require separate conditions.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "SRC-HIST-TOPOLOGY"
+      ],
+      "source_date": "2026-06-11",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [
+        "q_j in argmin_{x in Omega_j} sum_k d(x,gamma_k)^2"
+      ],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "Historical source writes q_j = argmin and calls the point unique; this display makes its potentially set-valued nature explicit as editorial review.",
+        "Open domains need not attain an infimum; nonconvex distance objectives can have multiple minimizers.",
+        "No proof of uniqueness was recovered."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Centru candidat; unicitatea rămâne deschisă",
+      "statement_ro": "Schița definește un centru prin minimizarea sumei distanțelor pătratice și afirmă unicitatea. Existența și unicitatea minimului cer condiții și demonstrații separate.",
+      "paraphrase_ro": "Schița definește un centru prin minimizarea sumei distanțelor pătratice și afirmă unicitatea. Existența și unicitatea minimului cer condiții și demonstrații separate.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-DENSITY",
+      "title": "Distance-weighted overlap density",
+      "branch": "projection",
+      "label": "historical-review",
+      "object_type": "ANSATZ",
+      "epistemic_status": null,
+      "domain": [],
+      "depends_on": [
+        "ATLAS-TUBE-OVERLAP"
+      ],
+      "statement": "The draft proposes a regulated inverse-distance sum and an integrated overlap weight.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "SRC-HIST-TOPOLOGY"
+      ],
+      "source_date": "2026-06-11",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [
+        "rho(x) = sum_k (d(x,gamma_k)+delta)^(-alpha), alpha>0",
+        "mu(Omega) = integral_Omega rho(x) dV"
+      ],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "Keeping delta positive defines a regulated illustration; the proposed delta→0 limit requires integrability analysis.",
+        "No mass-density dimensions or normalization were supplied; mu must not be silently labeled physical mass.",
+        "The kernel exponent and regulator are choices, not empirical measurements."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Densitate ponderată prin distanță",
+      "statement_ro": "Schița propune un nucleu de distanță inversă regularizat și integrala sa pe suprapunere. Limita fără regulator și interpretarea ca masă fizică nu sunt justificate.",
+      "paraphrase_ro": "Schița propune un nucleu de distanță inversă regularizat și integrala sa pe suprapunere. Limita fără regulator și interpretarea ca masă fizică nu sunt justificate.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-FOLD-CURVATURE",
+      "title": "Historical folding intensity requires geometric repair",
+      "branch": "projection",
+      "label": "historical-review",
+      "object_type": "SCHEMA",
+      "epistemic_status": "CONJECTURE",
+      "domain": [],
+      "depends_on": [
+        "ATLAS-DENSITY",
+        "ATLAS-CURVE-FAMILY"
+      ],
+      "statement": "The draft couples an overlap weight to an integral of the magnitude of second parameter derivatives and calls the latter geodesic curvature. That identification is not justified for an arbitrary parameterization.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "SRC-HIST-TOPOLOGY"
+      ],
+      "source_date": "2026-06-11",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [
+        "historical kappa_Omega = sum_k integral ||gamma_k''(theta)|| dtheta",
+        "historical lambda_j = mu(Omega_j) kappa_Omega"
+      ],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "Parameter acceleration is generally not curvature; geometric total curvature uses arclength and unit tangent.",
+        "Geodesic curvature additionally requires a specified surface or connection.",
+        "The event operator F_q is not operationally defined."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Intensitatea plierii necesită o revizuire geometrică",
+      "statement_ro": "Schița numește o integrală a accelerației parametrice «curbură geodezică». Identificarea nu este justificată fără parametrizare, suprafață și conexiune precizate.",
+      "paraphrase_ro": "Schița numește o integrală a accelerației parametrice «curbură geodezică». Identificarea nu este justificată fără parametrizare, suprafață și conexiune precizate.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-CAUSAL-ORDER",
+      "title": "Causal ordering on closed layers",
+      "branch": "access",
+      "label": "historical-review",
+      "object_type": "SCHEMA",
+      "epistemic_status": "CONJECTURE",
+      "domain": [],
+      "depends_on": [
+        "ATLAS-TUBE-OVERLAP"
+      ],
+      "statement": "The topology draft tries to order localized events by their parameter order along shared periodic layers.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "SRC-HIST-TOPOLOGY"
+      ],
+      "source_date": "2026-06-11",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "A periodic parameter has no preferred global start; ordering across different layers can create cycles.",
+        "A strict partial order requires irreflexivity and transitivity, which were not proved.",
+        "Topological adjacency does not establish quantum nonlocality, signalling or relativistic causation."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Ordine cauzală pe straturi închise",
+      "statement_ro": "Schița încearcă să ordoneze evenimentele prin ordinea parametrului pe straturi periodice. Lipsesc o regulă globală fără cicluri și un mecanism cauzal fizic.",
+      "paraphrase_ro": "Schița încearcă să ordoneze evenimentele prin ordinea parametrului pe straturi periodice. Lipsesc o regulă globală fără cicluri și un mecanism cauzal fizic.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-GRAVITY-EXTRAPOLATION",
+      "title": "From local regularity to physical applications",
+      "branch": "qfp",
+      "label": "historical-review",
+      "object_type": null,
+      "epistemic_status": "SPECULATIVE",
+      "domain": [],
+      "depends_on": [
+        "QFP-D005"
+      ],
+      "statement": "The July manuscript explores a regular core, scalarization, energy redistribution and metric engineering, while also warning that technology has not been experimentally demonstrated.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "SRC-HIST-GRAVITY"
+      ],
+      "source_date": "2026-07-27",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "Some global/stability assertions exceed the recovered mathematical support.",
+        "Current canonical local scalar and center relations do not prove a global regular black hole, a dynamical collapse outcome or a propulsion system.",
+        "Missing equation objects are not reconstructed or imported into the canonical record."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "De la regularitate locală la aplicații fizice",
+      "statement_ro": "Manuscrisul din iulie explorează un nucleu regulat, scalarizare, redistribuirea energiei și inginerie metrică. Afirmațiile globale și tehnologice depășesc rezultatele locale canonice.",
+      "paraphrase_ro": "Manuscrisul din iulie explorează un nucleu regulat, scalarizare, redistribuirea energiei și inginerie metrică. Afirmațiile globale și tehnologice depășesc rezultatele locale canonice.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-AGI-TOPOLOGY",
+      "title": "Distributed intelligence and thermodynamic bounds",
+      "branch": "access",
+      "label": "historical-review",
+      "object_type": "SCHEMA",
+      "epistemic_status": "CONJECTURE",
+      "domain": [],
+      "depends_on": [],
+      "statement": "An adjacent July draft separates cognitive breadth from runaway localized acceleration and proposes I=f(C,E), with C for computational resources and E for a relational coupling measure.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Editorial paraphrase; original speaker attribution unknown",
+      "source_ids": [
+        "SRC-HIST-AGI"
+      ],
+      "source_date": "2026-07-23",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "assumptions": [],
+      "definitions": [],
+      "equations": [
+        "I = f(C,E)"
+      ],
+      "evidence": [
+        {
+          "kind": "curated source summary",
+          "path": "10_REFERENCES/Atlas_Sources.md"
+        }
+      ],
+      "limitations": [
+        "No validated operational intelligence metric or empirical scaling law was recovered.",
+        "For dI/dt=k I^alpha, alpha=1 gives exponential growth, not finite-time blowup; that requires alpha>1 with positive k and initial data.",
+        "Reorganizing relational topology does not establish a zero-energy physical implementation or permit faster-than-light information transfer.",
+        "This adjacent draft is not a derivation of the canonical gravitational model."
+      ],
+      "revision": "atlas curation 2026-11-11; not canonical promotion",
+      "units": {},
+      "validation": [],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Inteligență distribuită și limite termodinamice",
+      "statement_ro": "O schiță înrudită separă amploarea cognitivă de accelerarea locală și propune I=f(C,E). Nu a fost recuperată o lege de scalare validată sau o implementare fără cost termodinamic.",
+      "paraphrase_ro": "O schiță înrudită separă amploarea cognitivă de accelerarea locală și propune I=f(C,E). Nu a fost recuperată o lege de scalare validată sau o implementare fără cost termodinamic.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "NOT_FORMULATED",
+      "units_note": "No physical units have been formulated for this schema or historical construction; empty metadata does not mean dimensionless."
+    },
+    {
+      "id": "ATLAS-P-TENSOR",
+      "title": "Explicit curvature tensor for the metric review",
+      "branch": "qfp",
+      "label": "review-draft",
+      "object_type": "DEFINITION",
+      "epistemic_status": null,
+      "domain": [
+        "LOCAL",
+        "FOUR-DIMENSIONAL"
+      ],
+      "depends_on": [
+        "QFP-C001"
+      ],
+      "statement": "The review defines P_abcd algebraically, fixing index order and curvature convention without invoking an unspecified dual-sign convention.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Present mathematical review",
+      "source_ids": [
+        "SRC-ATLAS-METRIC-REVIEW"
+      ],
+      "source_date": "2026-11-11",
+      "date_basis": "present review date, not historical conception date",
+      "assumptions": [
+        "Canonical Riemann convention and a four-dimensional Levi-Civita metric."
+      ],
+      "definitions": [],
+      "equations": [
+        "P_abcd = R_abcd + g_ad R_bc - g_ac R_bd + g_bc R_ad - g_bd R_ac + (R/2)(g_ac g_bd - g_ad g_bc)"
+      ],
+      "evidence": [
+        {
+          "kind": "review record",
+          "path": "12_VALIDATION/Atlas_Metric_Bulk_Variation_Draft.md"
+        }
+      ],
+      "limitations": [
+        "New review identifier, not a canonical registry entry.",
+        "A finite exact tensor sample checks an implementation but is not a proof for arbitrary tensors."
+      ],
+      "revision": "REVIEW DRAFT; NOT CANONICALLY PROMOTED",
+      "units": {
+        "P": "M^2 in orthonormal components"
+      },
+      "validation": [
+        {
+          "method": "ALGEBRAIC DEFINITION",
+          "role": "REVIEW"
+        },
+        {
+          "method": "SYMBOLIC COMPUTATION",
+          "role": "EXACT SAMPLE CROSS-CHECK",
+          "outcome": "PASS",
+          "record": "SRC-ATLAS-METRIC-REVIEW"
+        }
+      ],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Tensorul explicit de curbură pentru revizuirea metrică",
+      "statement_ro": "Revizuirea definește tensorul P algebric, cu ordinea indicilor și convenția de curbură explicite. Identificatorul aparține revizuirii, nu registrului canonic.",
+      "paraphrase_ro": "Revizuirea definește tensorul P algebric, cu ordinea indicilor și convenția de curbură explicite. Identificatorul aparține revizuirii, nu registrului canonic.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "ATLAS-METRIC-REVIEW",
+      "title": "Conditional local metric bulk equation — review draft",
+      "branch": "qfp",
+      "label": "review-draft",
+      "object_type": "WORKING MODEL",
+      "epistemic_status": "DERIVED",
+      "domain": [
+        "LOCAL",
+        "SMOOTH FOUR-DIMENSIONAL LORENTZIAN PATCH"
+      ],
+      "depends_on": [
+        "QFP-M001",
+        "QFP-C001",
+        "QFP-A001",
+        "ATLAS-P-TENSOR"
+      ],
+      "statement": "A separate review derives the local inverse-metric Euler coefficient for the protected action, with compactly supported variations. It remains a review draft and is not promoted to the canonical registry.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Present mathematical review",
+      "source_ids": [
+        "SRC-ATLAS-METRIC-REVIEW"
+      ],
+      "source_date": "2026-11-11",
+      "date_basis": "present review date, not historical conception date",
+      "assumptions": [
+        "Vary inverse metric with Phi fixed; Levi-Civita connection; signature (-+++).",
+        "F and H independent; alpha constant; variations compactly supported."
+      ],
+      "definitions": [],
+      "equations": [
+        "F G_munu + (g_munu Box - nabla_mu nabla_nu)F - T_munu(Phi)/2 + 4 alpha P_murhonusigma nabla^rho nabla^sigma H = 0"
+      ],
+      "evidence": [
+        {
+          "kind": "review record",
+          "path": "12_VALIDATION/Atlas_Metric_Bulk_Variation_Draft.md"
+        }
+      ],
+      "limitations": [
+        "No complete finite-boundary action or global variational problem.",
+        "No full spherical ODE reduction, all center metric constraints, global solution or stability proof.",
+        "No second independent arbitrary-metric functional-variation implementation.",
+        "The +4 Euler-coefficient term and -8 effective-stress term are different rearrangements, not interchangeable coefficients."
+      ],
+      "revision": "REVIEW DRAFT; NOT CANONICALLY PROMOTED",
+      "units": {
+        "metric_terms": "M^4",
+        "scalar_equation_terms": "M^3"
+      },
+      "validation": [
+        {
+          "method": "ANALYTIC DERIVATION",
+          "role": "LOCAL BULK REVIEW"
+        },
+        {
+          "method": "SYMBOLIC COMPUTATION",
+          "outcome": "8/8 supplemental exact tests passed; see run record",
+          "record": "SRC-ATLAS-MATH-REVIEW"
+        },
+        {
+          "method": "LIMITING-CASE TEST",
+          "case": "FLRW lapse sign and constant-coupling normalization",
+          "outcome": "PASS"
+        }
+      ],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Ecuație metrică locală condiționată — schiță de revizuire",
+      "statement_ro": "O revizuire separată derivă ecuația metrică locală a acțiunii protejate, pentru variații cu suport compact. Rezultatul rămâne schiță de revizuire și nu este promovat canonic.",
+      "paraphrase_ro": "O revizuire separată derivă ecuația metrică locală a acțiunii protejate, pentru variații cu suport compact. Rezultatul rămâne schiță de revizuire și nu este promovat canonic.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "id": "ATLAS-REFERENCE-MASS",
+      "title": "Dimensionless display through a reference mass",
+      "branch": "qfp",
+      "label": "review-draft",
+      "object_type": "DEFINITION",
+      "epistemic_status": "DERIVED",
+      "domain": [
+        "LOCAL",
+        "REGULAR-CENTER",
+        "PLOTTED COORDINATE PATCH"
+      ],
+      "depends_on": [
+        "QFP-C001",
+        "QFP-M001",
+        "QFP-A003"
+      ],
+      "statement": "Choosing an arbitrary positive reference mass mu defines dimensionless display variables and preserves the algebraic form of the center equations. No measured mass scale is selected.",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Present mathematical review",
+      "source_ids": [
+        "SRC-ATLAS-MATH-REVIEW"
+      ],
+      "source_date": "2026-11-11",
+      "date_basis": "present review date, not historical conception date",
+      "assumptions": [
+        "mu>0; canonical natural-unit dimensions; original local expansion assumptions."
+      ],
+      "definitions": [],
+      "equations": [
+        "r_hat = mu r; m_hat = mu m",
+        "m3_hat = m3/mu^2; delta2_hat = delta2/mu^2",
+        "Phi_hat = Phi/mu; Phi2_hat = Phi2/mu^3",
+        "Fprime_hat = Fprime/mu; Hprime_hat = mu Hprime; Vprime_hat = Vprime/mu^3",
+        "R_hat=R/mu^2; G_hat=G/mu^4"
+      ],
+      "evidence": [
+        {
+          "kind": "review record",
+          "path": "12_VALIDATION/Atlas_Mathematical_Review.md"
+        }
+      ],
+      "limitations": [
+        "A coordinate scale is not an observed physical scale or a micro/macro duality.",
+        "Hatted software tolerances do not estimate truncation error.",
+        "Spherical coordinate-component dimensions require the explicit chart convention."
+      ],
+      "revision": "REVIEW DRAFT; NOT CANONICALLY PROMOTED",
+      "units": {
+        "mu": "M",
+        "hatted_quantities": "1",
+        "alpha": "1"
+      },
+      "validation": [
+        {
+          "method": "DIMENSIONAL CHECK",
+          "outcome": "PASS"
+        },
+        {
+          "method": "SYMBOLIC COMPUTATION",
+          "case": "exact scalar residual rescaling",
+          "outcome": "PASS"
+        }
+      ],
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "No operational physical validation protocol is supplied for this atlas record; mathematical review is not empirical validation."
+      },
+      "title_ro": "Afișare adimensională printr-o masă de referință",
+      "statement_ro": "O masă de referință arbitrară, pozitivă, definește variabile adimensionale și păstrează forma ecuațiilor centrale. Nu este aleasă o scară fizică măsurată.",
+      "paraphrase_ro": "O masă de referință arbitrară, pozitivă, definește variabile adimensionale și păstrează forma ecuațiilor centrale. Nu este aleasă o scară fizică măsurată.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English.",
+      "units_status": "CANONICAL_CONVENTION",
+      "units_note": "Context dimensions from canonical conventions or the explicitly identified local review; not calibrated measurements."
+    },
+    {
+      "label": "explanatory-model",
+      "category": "geometry",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Present atlas explanatory construction; not attributed to the research author",
+      "source_date": "2026-11-11",
+      "date_basis": "present implementation and explanatory calculation",
+      "revision": "New atlas teaching object; not canonical QFP",
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "This is an explanatory mathematical construction; no physical or consciousness claim is being tested."
+      },
+      "id": "ATLAS-BALL-PROJECTION",
+      "title": "Unit-ball projection and planar slice",
+      "branch": "projection",
+      "object_type": "WORKING MODEL",
+      "epistemic_status": "DERIVED",
+      "domain": [
+        "EUCLIDEAN R3",
+        "SOLID UNIT BALL"
+      ],
+      "depends_on": [],
+      "statement": "For the solid unit ball, orthographic projection onto the xy plane is the unit disk. A slice at z=s is a disk of radius sqrt(1-s^2) for |s|<1, a point for |s|=1, and empty for |s|>1. These are different operations.",
+      "source_ids": [
+        "SRC-PRESENT-MODELS",
+        "SRC-MIT-PROJECTION"
+      ],
+      "assumptions": [
+        "Euclidean coordinates normalized by the chosen ball radius.",
+        "Solid ball x^2+y^2+z^2<=1, not a hollow surface."
+      ],
+      "definitions": [
+        "pi(x,y,z)=(x,y); slice fixes z=s."
+      ],
+      "equations": [
+        "pi(B^3) = {(x,y): x^2+y^2<=1}",
+        "rho(s)=sqrt(1-s^2) for |s|<=1",
+        "A(s)=pi(1-s^2) for |s|<=1"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "path": "WEB/qfp-lab/js/atlas-math.js",
+          "symbols": [
+            "ballSlice",
+            "projectXY"
+          ]
+        },
+        {
+          "kind": "state bounds",
+          "path": "WEB/qfp-lab/js/atlas-state.js",
+          "symbols": [
+            "cleanState"
+          ]
+        },
+        {
+          "kind": "test assertions",
+          "path": "WEB/qfp-lab/tests/atlas.test.mjs"
+        }
+      ],
+      "limitations": [
+        "This is a Euclidean teaching model, not C, Sigma, spacetime emergence or an author's historical definition.",
+        "projectXY is a rectangular dimension-reducing map; P^2 is not defined for that map without a separate embedding.",
+        "UI s is bounded [-1.2,1.2]; finite floating-point arithmetic is used."
+      ],
+      "units": {
+        "x": "1",
+        "y": "1",
+        "z": "1",
+        "s": "1",
+        "radius": "1",
+        "area": "normalized area"
+      },
+      "units_status": "DECLARED_MODEL_UNITS",
+      "units_note": "Coordinates normalized by a selected unit-ball radius; no physical calibration.",
+      "bounds": {
+        "slice_height": {
+          "min": -1.2,
+          "max": 1.2
+        },
+        "finite_inputs": true
+      },
+      "validation": [
+        {
+          "method": "ANALYTIC DERIVATION",
+          "record": "SRC-PRESENT-MODELS"
+        },
+        {
+          "method": "IMPLEMENTATION TEST",
+          "status": "test assertions inspected; execution evidence maintained by integration run",
+          "path": "WEB/qfp-lab/tests/atlas.test.mjs"
+        }
+      ],
+      "title_ro": "Proiecția bilei unitate și secțiunea plană",
+      "statement_ro": "Proiecția ortografică a bilei unitate este discul unitate. Secțiunea z=s este un disc pentru |s|<1, un punct pentru |s|=1 și vidă pentru |s|>1. Operațiile sunt diferite.",
+      "paraphrase_ro": "Proiecția ortografică a bilei unitate este discul unitate. Secțiunea z=s este un disc pentru |s|<1, un punct pentru |s|=1 și vidă pentru |s|>1. Operațiile sunt diferite.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English."
+    },
+    {
+      "label": "explanatory-model",
+      "category": "geometry",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Present atlas explanatory construction; not attributed to the research author",
+      "source_date": "2026-11-11",
+      "date_basis": "present implementation and explanatory calculation",
+      "revision": "New atlas teaching object; not canonical QFP",
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "This is an explanatory mathematical construction; no physical or consciousness claim is being tested."
+      },
+      "id": "ATLAS-INTEGER-ACCESS",
+      "title": "Integer state, successor and finite access window",
+      "branch": "access",
+      "object_type": "DEFINITION",
+      "epistemic_status": null,
+      "domain": [
+        "INTEGER STATES",
+        "FINITE OBSERVATION WINDOW"
+      ],
+      "depends_on": [],
+      "statement": "Choose states n in Z and a transition T(n)=n+1. A separate finite viewing interval determines which states are displayed. Moving or widening that interval does not change the current state or transition law.",
+      "source_ids": [
+        "SRC-PRESENT-MODELS"
+      ],
+      "assumptions": [
+        "The integer set and successor rule are stipulated.",
+        "The browser implements only a bounded finite view and finite safe arithmetic."
+      ],
+      "definitions": [
+        "T: Z -> Z, T(n)=n+1.",
+        "Visible interval W(c,w)={n in Z: c-w<=n<=c+w}."
+      ],
+      "equations": [
+        "T(n)=n+1",
+        "W(c,w)={n in Z: |n-c|<=w}"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "path": "WEB/qfp-lab/js/atlas-math.js",
+          "symbols": [
+            "successor",
+            "visibleIntegers"
+          ]
+        },
+        {
+          "kind": "state bounds",
+          "path": "WEB/qfp-lab/js/atlas-state.js",
+          "symbols": [
+            "cleanState"
+          ]
+        },
+        {
+          "kind": "test assertions",
+          "path": "WEB/qfp-lab/tests/atlas.test.mjs"
+        }
+      ],
+      "limitations": [
+        "An illustrative access rule is not a measurement of consciousness or proof of universal access.",
+        "A finite screen neither contains nor completes an infinite enumeration.",
+        "The initial/source-import UI clamps n and center to [-1000000,1000000], half-width to [2,10]. successor additionally checks JavaScript safe integers."
+      ],
+      "units": {
+        "state": "integer count",
+        "center": "integer index",
+        "half_width": "integer count"
+      },
+      "units_status": "DECLARED_MODEL_UNITS",
+      "units_note": "Pure integer labels and counts; no physical dimensions or duration assigned.",
+      "bounds": {
+        "initial_state_min": -1000000,
+        "initial_state_max": 1000000,
+        "window_center_min": -1000000,
+        "window_center_max": 1000000,
+        "half_width_min": 2,
+        "half_width_max": 10
+      },
+      "validation": [
+        {
+          "method": "DEFINITION INSPECTION",
+          "record": "SRC-PRESENT-MODELS"
+        },
+        {
+          "method": "IMPLEMENTATION TEST",
+          "status": "test assertions inspected; execution evidence maintained by integration run",
+          "path": "WEB/qfp-lab/tests/atlas.test.mjs"
+        }
+      ],
+      "title_ro": "Stare întreagă, succesor și fereastră finită de acces",
+      "statement_ro": "Se aleg stările întregi și tranziția T(n)=n+1. O fereastră finită, separată, stabilește ce este afișat; deplasarea ei nu modifică starea sau legea de tranziție.",
+      "paraphrase_ro": "Se aleg stările întregi și tranziția T(n)=n+1. O fereastră finită, separată, stabilește ce este afișat; deplasarea ei nu modifică starea sau legea de tranziție.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English."
+    },
+    {
+      "label": "explanatory-model",
+      "category": "geometry",
+      "original_wording": null,
+      "editorial_paraphrase": true,
+      "speaker": "Present atlas explanatory construction; not attributed to the research author",
+      "source_date": "2026-11-11",
+      "date_basis": "present implementation and explanatory calculation",
+      "revision": "New atlas teaching object; not canonical QFP",
+      "physical_validation": {
+        "prediction": null,
+        "comparison": null,
+        "protocol": null,
+        "uncertainty": null,
+        "failure_criterion": null,
+        "status": "NOT FORMULATED",
+        "note": "This is an explanatory mathematical construction; no physical or consciousness claim is being tested."
+      },
+      "id": "ATLAS-LOG-SCALE",
+      "title": "Positive logarithmic scale and reciprocal reflection",
+      "branch": "scale",
+      "object_type": "DEFINITION",
+      "epistemic_status": "DERIVED",
+      "domain": [
+        "POSITIVE LENGTHS",
+        "REAL LOGARITHMIC COORDINATE"
+      ],
+      "depends_on": [],
+      "statement": "For a chosen positive reference length l0, define q=log10(l/l0). Then l(q)=l0 10^q, and reflection q to -q gives l(q)l(-q)=l0^2. This is a selected coordinate correspondence, not a physical micro/macro duality.",
+      "source_ids": [
+        "SRC-PRESENT-MODELS",
+        "SRC-NIST-LOG"
+      ],
+      "assumptions": [
+        "l>0 and l0>0; both lengths measured in the same units.",
+        "Only a finite representable domain is displayed."
+      ],
+      "definitions": [
+        "q is dimensionless; q=0 means l=l0."
+      ],
+      "equations": [
+        "q=log10(l/l0)",
+        "l(q)=l0*10^q",
+        "l(q)*l(-q)=l0^2"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "path": "WEB/qfp-lab/js/atlas-math.js",
+          "symbols": [
+            "lengthAt",
+            "logAt"
+          ]
+        },
+        {
+          "kind": "state bounds",
+          "path": "WEB/qfp-lab/js/atlas-state.js",
+          "symbols": [
+            "cleanState"
+          ]
+        },
+        {
+          "kind": "test assertions",
+          "path": "WEB/qfp-lab/tests/atlas.test.mjs"
+        }
+      ],
+      "limitations": [
+        "q=0 is not absolute zero, zero energy, vacuum or an ontological ground.",
+        "Negative q gives a smaller positive length; finite slider endpoints are not infinity.",
+        "No physical filament mechanism is implemented."
+      ],
+      "units": {
+        "l": "m in displayed UI",
+        "l0": "m in displayed UI",
+        "q": "1",
+        "product": "m^2"
+      },
+      "units_status": "DECLARED_MODEL_UNITS",
+      "units_note": "The UI uses metres consistently; a dimensionless length ratio enters log10.",
+      "bounds": {
+        "q_min": -12,
+        "q_max": 12,
+        "reference_length_min_m": 1E-09,
+        "reference_length_max_m": 1000000000
+      },
+      "validation": [
+        {
+          "method": "ANALYTIC DERIVATION",
+          "record": "SRC-PRESENT-MODELS"
+        },
+        {
+          "method": "IMPLEMENTATION TEST",
+          "status": "test assertions inspected; execution evidence maintained by integration run",
+          "path": "WEB/qfp-lab/tests/atlas.test.mjs"
+        }
+      ],
+      "title_ro": "Scară logaritmică pozitivă și reflexie reciprocă",
+      "statement_ro": "Pentru lungimea de referință pozitivă l0, q=log10(l/l0). Reflexia q→−q produce l(q)l(−q)=l0². Este o corespondență aleasă, nu o dualitate fizică demonstrată.",
+      "paraphrase_ro": "Pentru lungimea de referință pozitivă l0, q=log10(l/l0). Reflexia q→−q produce l(q)l(−q)=l0². Este o corespondență aleasă, nu o dualitate fizică demonstrată.",
+      "translation_note": "Romanian visitor paraphrase; original source/technical record remains English."
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-REPO-01",
+      "title": "qfp_claim_registry.json",
+      "type": "canonical repository record",
+      "path": "00_FOUNDATION/qfp_claim_registry.json",
+      "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/00_FOUNDATION/qfp_claim_registry.json",
+      "date": "2026-08-09",
+      "date_basis": "date stated in repository research log; not a conversation timestamp",
+      "speaker": "QFP repository; individual author/model attribution not resolved",
+      "limitations": [
+        "Canonical source snapshot 6fa0f1f; validation metadata records prior repository evidence, not empirical confirmation."
+      ]
+    },
+    {
+      "id": "SRC-REPO-02",
+      "title": "AGENTS.md",
+      "type": "canonical repository record",
+      "path": "AGENTS.md",
+      "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/AGENTS.md",
+      "date": "2026-08-09",
+      "date_basis": "date stated in repository research log; not a conversation timestamp",
+      "speaker": "QFP repository; individual author/model attribution not resolved",
+      "limitations": [
+        "Canonical source snapshot 6fa0f1f; validation metadata records prior repository evidence, not empirical confirmation."
+      ]
+    },
+    {
+      "id": "SRC-REPO-03",
+      "title": "Conventions_and_Notation.md",
+      "type": "canonical repository record",
+      "path": "02_MATHEMATICS/Conventions_and_Notation.md",
+      "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/Conventions_and_Notation.md",
+      "date": "2026-08-09",
+      "date_basis": "date stated in repository research log; not a conversation timestamp",
+      "speaker": "QFP repository; individual author/model attribution not resolved",
+      "limitations": [
+        "Canonical source snapshot 6fa0f1f; validation metadata records prior repository evidence, not empirical confirmation."
+      ]
+    },
+    {
+      "id": "SRC-REPO-04",
+      "title": "Scalar_Euler_Lagrange_Derivation.md",
+      "type": "canonical repository record",
+      "path": "02_MATHEMATICS/derivations/Scalar_Euler_Lagrange_Derivation.md",
+      "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/derivations/Scalar_Euler_Lagrange_Derivation.md",
+      "date": "2026-08-09",
+      "date_basis": "date stated in repository research log; not a conversation timestamp",
+      "speaker": "QFP repository; individual author/model attribution not resolved",
+      "limitations": [
+        "Canonical source snapshot 6fa0f1f; validation metadata records prior repository evidence, not empirical confirmation."
+      ]
+    },
+    {
+      "id": "SRC-REPO-05",
+      "title": "Scalar_Equation_Validation.md",
+      "type": "canonical repository record",
+      "path": "12_VALIDATION/limiting_cases/Scalar_Equation_Validation.md",
+      "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/12_VALIDATION/limiting_cases/Scalar_Equation_Validation.md",
+      "date": "2026-08-09",
+      "date_basis": "date stated in repository research log; not a conversation timestamp",
+      "speaker": "QFP repository; individual author/model attribution not resolved",
+      "limitations": [
+        "Canonical source snapshot 6fa0f1f; validation metadata records prior repository evidence, not empirical confirmation."
+      ]
+    },
+    {
+      "id": "SRC-REPO-06",
+      "title": "Regular_Center_Scalar_Reduction.md",
+      "type": "canonical repository record",
+      "path": "02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md",
+      "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md",
+      "date": "2026-08-09",
+      "date_basis": "date stated in repository research log; not a conversation timestamp",
+      "speaker": "QFP repository; individual author/model attribution not resolved",
+      "limitations": [
+        "Canonical source snapshot 6fa0f1f; validation metadata records prior repository evidence, not empirical confirmation."
+      ]
+    },
+    {
+      "id": "SRC-REPO-07",
+      "title": "Scalar_Regular_Center_Test.md",
+      "type": "canonical repository record",
+      "path": "12_VALIDATION/regularity/Scalar_Regular_Center_Test.md",
+      "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/12_VALIDATION/regularity/Scalar_Regular_Center_Test.md",
+      "date": "2026-08-09",
+      "date_basis": "date stated in repository research log; not a conversation timestamp",
+      "speaker": "QFP repository; individual author/model attribution not resolved",
+      "limitations": [
+        "Canonical source snapshot 6fa0f1f; validation metadata records prior repository evidence, not empirical confirmation."
+      ]
+    },
+    {
+      "id": "SRC-REPO-08",
+      "title": "2026-08-09_center-relations-promoted-to-derived.md",
+      "type": "canonical repository record",
+      "path": "11_RESEARCH_LOG/2026/2026-08-09_center-relations-promoted-to-derived.md",
+      "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/11_RESEARCH_LOG/2026/2026-08-09_center-relations-promoted-to-derived.md",
+      "date": "2026-08-09",
+      "date_basis": "date stated in repository research log; not a conversation timestamp",
+      "speaker": "QFP repository; individual author/model attribution not resolved",
+      "limitations": [
+        "Canonical source snapshot 6fa0f1f; validation metadata records prior repository evidence, not empirical confirmation."
+      ]
+    },
+    {
+      "id": "SRC-REPO-09",
+      "title": "README.md",
+      "type": "canonical repository record",
+      "path": "README.md",
+      "url": "https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/README.md",
+      "date": "2026-08-09",
+      "date_basis": "date stated in repository research log; not a conversation timestamp",
+      "speaker": "QFP repository; individual author/model attribution not resolved",
+      "limitations": [
+        "Canonical source snapshot 6fa0f1f; validation metadata records prior repository evidence, not empirical confirmation."
+      ]
+    },
+    {
+      "id": "SRC-HIST-TOPOLOGY",
+      "title": "Pre-spacetime QFP topology draft",
+      "type": "private recovered draft; public editorial summary",
+      "path": "10_REFERENCES/Atlas_Sources.md#topology-draft",
+      "url": null,
+      "date": "2026-06-11",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "speaker": "Original speaker and generating model unknown",
+      "description": "Saved native document; one of four similarly titled candidate copies inspected.",
+      "limitations": [
+        "Literal text retains formulas; no conversation roles, model identifiers or original message dates.",
+        "Private source identifiers, URLs, original full text and account metadata are not published."
+      ]
+    },
+    {
+      "id": "SRC-HIST-GRAVITY",
+      "title": "QFP Physics Manuscript Drafting",
+      "type": "private recovered draft; public editorial summary",
+      "path": "10_REFERENCES/Atlas_Sources.md#qfp-manuscript",
+      "url": null,
+      "date": "2026-07-27",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "speaker": "Original speaker and generating model unknown",
+      "description": "Saved manuscript draft; recovered text, not a proof or canonical revision.",
+      "limitations": [
+        "Some equation objects disappear in text extraction; bibliography not treated as verified citations.",
+        "Private source identifiers, URLs, original full text and account metadata are not published."
+      ]
+    },
+    {
+      "id": "SRC-HIST-AGI",
+      "title": "Theoretical Physics AGI Decoupling Paper",
+      "type": "private recovered draft; public editorial summary",
+      "path": "10_REFERENCES/Atlas_Sources.md#agi-decoupling",
+      "url": null,
+      "date": "2026-07-23",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "speaker": "Original speaker and generating model unknown",
+      "description": "Adjacent theoretical draft about information processing and distributed cognition.",
+      "limitations": [
+        "Shared terminology is an interpretive connection, not a proven dependency or QFP physical result.",
+        "Private source identifiers, URLs, original full text and account metadata are not published."
+      ]
+    },
+    {
+      "id": "SRC-CONTEXT-RELATIONAL",
+      "title": "QFP Theory v1.2 Chapter 3",
+      "type": "private recovered draft; public editorial summary",
+      "path": "10_REFERENCES/Atlas_Sources.md#qfp-chapter3",
+      "url": null,
+      "date": "2026-04-12",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "speaker": "Original speaker and generating model unknown",
+      "description": "Context-only candidate; QFP means Quantum Field Patterning in this document.",
+      "limitations": [
+        "Identity with Quantum Folding Point is unestablished; no merge into canonical theory.",
+        "Private source identifiers, URLs, original full text and account metadata are not published."
+      ]
+    },
+    {
+      "id": "SRC-CONTEXT-PROPULSION",
+      "title": "Quantum Propulsion Whitepaper Formalization",
+      "type": "private recovered draft; public editorial summary",
+      "path": "10_REFERENCES/Atlas_Sources.md#propulsion-draft",
+      "url": null,
+      "date": "2026-05-10",
+      "date_basis": "Drive file creation metadata; original conversation date unknown",
+      "speaker": "Original speaker and generating model unknown",
+      "description": "Historical speculative context explicitly naming Quantum Folding Point.",
+      "limitations": [
+        "Claims of propulsion, antigravity and hardware efficacy are unsupported; not an implementation or experiment.",
+        "Private source identifiers, URLs, original full text and account metadata are not published."
+      ]
+    },
+    {
+      "id": "owner-mission-2026-11-11",
+      "title": "Owner-supplied research-history leads",
+      "type": "owner summary",
+      "path": "10_REFERENCES/Atlas_Sources.md#owner-history-leads",
+      "url": null,
+      "date": "2026-11-11",
+      "date_basis": "date supplied to this mission; described historical dates remain unverified leads",
+      "speaker": "Owner summary supplied in current mission; attribution Swami CIT Ananda / chatgptopenaiagi",
+      "limitations": [
+        "No original transcript, message ID, source PDF, model ID or independently verified creation date supplied for these leads.",
+        "Paraphrases are editorial; none is presented as a recovered quotation."
+      ]
+    },
+    {
+      "id": "SRC-MIT-PROJECTION",
+      "title": "MIT 18.06SC: Projections onto subspaces",
+      "type": "external primary teaching reference",
+      "url": "https://www.ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/least-squares-determinants-and-eigenvalues/projections-onto-subspaces/",
+      "path": null,
+      "date": null,
+      "date_basis": "retrieved and checked 2026-11-11 by integration agent",
+      "speaker": "MIT OpenCourseWare",
+      "limitations": [
+        "Supports mathematical projection vocabulary; does not support a physical QFP ontology."
+      ]
+    },
+    {
+      "id": "SRC-NIST-LOG",
+      "title": "NIST DLMF §4.2: Logarithm, exponential, powers",
+      "type": "external primary reference",
+      "url": "https://dlmf.nist.gov/4.2",
+      "path": null,
+      "date": null,
+      "date_basis": "retrieved and checked 2026-11-11 by integration agent",
+      "speaker": "NIST DLMF",
+      "limitations": [
+        "Supports positive-real logarithm calculations; does not make reciprocal scale correspondence a physical law."
+      ]
+    },
+    {
+      "id": "SRC-ATLAS-MATH-REVIEW",
+      "title": "Mathematical review for the research atlas",
+      "type": "present mathematical review",
+      "path": "12_VALIDATION/Atlas_Mathematical_Review.md",
+      "url": null,
+      "date": "2026-11-11",
+      "date_basis": "date of documented review/test execution",
+      "speaker": "Atlas mathematical review",
+      "limitations": [
+        "Analytic and symbolic checks, not empirical tests, global integration or canonical promotion."
+      ]
+    },
+    {
+      "id": "SRC-ATLAS-METRIC-REVIEW",
+      "title": "Separate draft: metric bulk variation",
+      "type": "present mathematical review draft",
+      "path": "12_VALIDATION/Atlas_Metric_Bulk_Variation_Draft.md",
+      "url": null,
+      "date": "2026-11-11",
+      "date_basis": "date of documented review/test execution",
+      "speaker": "Atlas mathematical review",
+      "limitations": [
+        "Review draft, not canonically promoted; compact-support local bulk variation; incomplete global/boundary/stability analysis."
+      ]
+    },
+    {
+      "id": "SRC-PRESENT-MODELS",
+      "title": "Present laboratory explanatory constructions",
+      "type": "present explanatory calculation and implementation",
+      "path": "01_THEORY/Laboratory_Explanatory_Models.md",
+      "url": null,
+      "date": "2026-11-11",
+      "date_basis": "date of present atlas implementation, not an author's historical formulation",
+      "speaker": "Present atlas editorial/implementation team",
+      "limitations": [
+        "Teaching constructions, not canonical QFP objects or empirical physics.",
+        "Code and unit tests check implementation within stated finite browser bounds."
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "TL-OWNER-2025",
+      "date": "2025-11-18",
+      "date_basis": "owner-supplied historical lead; original timestamp not recovered",
+      "title": "Sheet and folding intuition",
+      "summary": "Author intuition and assistant QUFC formulation are reported only in the current owner summary.",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "branch": "projection",
+      "certainty": "unverified historical lead",
+      "title_ro": "Intuiția foii și a plierii",
+      "summary_ro": "Intuiția autorului și formularea QUFC a asistentului sunt raportate doar în rezumatul actual al proprietarului."
+    },
+    {
+      "id": "TL-DRAFT-APR",
+      "date": "2026-04-12",
+      "date_basis": "Drive file creation metadata, not conversation date",
+      "title": "Relational QFP candidate",
+      "summary": "Quantum Field Patterning chapter; acronym identity with Quantum Folding Point is unestablished.",
+      "source_ids": [
+        "SRC-CONTEXT-RELATIONAL"
+      ],
+      "branch": "being",
+      "certainty": "metadata verified; relationship uncertain",
+      "title_ro": "Candidat relațional QFP",
+      "summary_ro": "Capitol de Quantum Field Patterning; identitatea cu Quantum Folding Point nu este stabilită."
+    },
+    {
+      "id": "TL-DRAFT-MAY",
+      "date": "2026-05-10",
+      "date_basis": "Drive file creation metadata, not conversation date",
+      "title": "Speculative propulsion context",
+      "summary": "A recovered draft names Quantum Folding Point but supplies no verified hardware or experiment.",
+      "source_ids": [
+        "SRC-CONTEXT-PROPULSION"
+      ],
+      "branch": "qfp",
+      "certainty": "metadata verified; scientific claims unverified",
+      "title_ro": "Context speculativ de propulsie",
+      "summary_ro": "Schița numește Quantum Folding Point, fără hardware sau experiment verificat."
+    },
+    {
+      "id": "TL-DRAFT-JUN",
+      "date": "2026-06-11",
+      "date_basis": "Drive file creation metadata, not conversation date",
+      "title": "Topology and localization draft",
+      "summary": "One saved document inspected; three similar-title copies remain metadata-only.",
+      "source_ids": [
+        "SRC-HIST-TOPOLOGY"
+      ],
+      "branch": "projection",
+      "certainty": "metadata verified",
+      "title_ro": "Schiță de topologie și localizare",
+      "summary_ro": "Un document salvat a fost inspectat; trei titluri similare au doar metadate."
+    },
+    {
+      "id": "TL-OWNER-JUN",
+      "date": "2026-06-30",
+      "date_basis": "owner-reported PDF creation metadata; file not recovered",
+      "title": "Continuum-Projection PDF lead",
+      "summary": "Embedded observer and E_A are reported research leads.",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "branch": "projection",
+      "certainty": "unverified historical lead",
+      "title_ro": "Pistă PDF continuu–proiecție",
+      "summary_ro": "Observatorul inclus și E_A sunt piste raportate; sursa originală nu a fost recuperată."
+    },
+    {
+      "id": "TL-DRAFT-JUL23",
+      "date": "2026-07-23",
+      "date_basis": "Drive file creation metadata, not conversation date",
+      "title": "AGI decoupling draft",
+      "summary": "Adjacent distributed-cognition and thermodynamic framing.",
+      "source_ids": [
+        "SRC-HIST-AGI"
+      ],
+      "branch": "access",
+      "certainty": "metadata verified",
+      "title_ro": "Schiță despre separarea AGI",
+      "summary_ro": "Cadru înrudit pentru cogniție distribuită și termodinamică."
+    },
+    {
+      "id": "TL-DRAFT-JUL27",
+      "date": "2026-07-27",
+      "date_basis": "Drive file creation metadata, not conversation date",
+      "title": "Scalar-gravity manuscript",
+      "summary": "Local regularity is discussed alongside stronger unverified global and engineering assertions.",
+      "source_ids": [
+        "SRC-HIST-GRAVITY"
+      ],
+      "branch": "qfp",
+      "certainty": "metadata verified",
+      "title_ro": "Manuscris scalar–gravitațional",
+      "summary_ro": "Regularitatea locală este discutată alături de afirmații globale și tehnologice neverificate."
+    },
+    {
+      "id": "TL-OWNER-AUG7",
+      "date": "2026-08-07",
+      "date_basis": "owner-supplied portfolio lead; original not recovered",
+      "title": "Distinct QFP branches",
+      "summary": "Gravitational, ontological, temporal and speculative branches reportedly distinguished.",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "branch": "qfp",
+      "certainty": "unverified historical lead",
+      "title_ro": "Ramuri QFP distincte",
+      "summary_ro": "Sunt raportate ramuri gravitaționale, ontologice, temporale și speculative."
+    },
+    {
+      "id": "TL-REPO-AUG9",
+      "date": "2026-08-09",
+      "date_basis": "date written in canonical repository research log",
+      "title": "Canonical local derivations and protocol",
+      "summary": "Current selected registry records 13 objects and claims with separate classification axes.",
+      "source_ids": [
+        "SRC-REPO-01"
+      ],
+      "branch": "qfp",
+      "certainty": "repository record",
+      "title_ro": "Derivări locale canonice și protocol",
+      "summary_ro": "Registrul selectiv actual conține 13 obiecte și afirmații, cu axe de clasificare separate."
+    },
+    {
+      "id": "TL-OWNER-AUG14",
+      "date": "2026-08-14",
+      "date_basis": "owner-supplied conversation summary; original timestamp not recovered",
+      "title": "Infinity and analogy review",
+      "summary": "Self-reference, infinity labels and standards for correspondence are reported.",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "branch": "being",
+      "certainty": "unverified historical lead",
+      "title_ro": "Revizuire a infinitului și analogiei",
+      "summary_ro": "Sunt raportate auto-referința, etichete ale infinitului și criterii pentru corespondență."
+    },
+    {
+      "id": "TL-OWNER-SEP",
+      "date": "2026-09-29",
+      "date_basis": "owner-supplied conversation title; original timestamp not recovered",
+      "title": "Accessibility structure",
+      "summary": "Admissibility, localized access and constrained histories.",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "branch": "access",
+      "certainty": "unverified historical lead",
+      "title_ro": "Structură de accesibilitate",
+      "summary_ro": "Admisibilitate, acces localizat și istorii constrânse."
+    },
+    {
+      "id": "TL-OWNER-NOV",
+      "date": "2026-11-08",
+      "date_basis": "owner-supplied visible-context lead; original not recovered here",
+      "title": "Micro/macro polarity",
+      "summary": "Exploratory filament/string emergence remains separate.",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "branch": "scale",
+      "certainty": "unverified historical lead",
+      "title_ro": "Polaritate micro/macro",
+      "summary_ro": "Emergența filamentală rămâne o explorare separată."
+    }
+  ],
+  "glossary": [
+    {
+      "id": "G-CONTINUUM",
+      "term": "Continuum",
+      "definition": "A schema for undivided ground; no single mathematical space is imposed across the historical branches.",
+      "branch": "being",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "term_ro": "Continuu",
+      "definition_ro": "Schemă a unui fundament nedivizat; nu se impune același spațiu matematic tuturor ramurilor istorice."
+    },
+    {
+      "id": "G-PROJECTION",
+      "term": "Projection",
+      "definition": "A map must specify domain, codomain and rule. A graphical projection is distinct from a slice, embedding or physical production mechanism.",
+      "branch": "projection",
+      "source_ids": [
+        "SRC-REPO-01",
+        "SRC-MIT-PROJECTION"
+      ],
+      "term_ro": "Proiecție",
+      "definition_ro": "O aplicație cere domeniu, codomeniu și regulă. Proiecția grafică diferă de secțiune, includere și producerea fizică a unei structuri."
+    },
+    {
+      "id": "G-ACCESS",
+      "term": "Admissibility",
+      "definition": "A proposed constraint on which states or histories count as accessible; the relevant set and relation remain to be supplied.",
+      "branch": "access",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ],
+      "term_ro": "Admisibilitate",
+      "definition_ro": "O constrângere propusă asupra stărilor sau istoriilor accesibile; mulțimea și relația rămân de precizat."
+    },
+    {
+      "id": "G-QFP",
+      "term": "QFP",
+      "definition": "Quantum Folding Point in the current project. A retrieved Quantum Field Patterning draft uses the same acronym; identity is not assumed.",
+      "branch": "qfp",
+      "source_ids": [
+        "SRC-HIST-TOPOLOGY",
+        "SRC-CONTEXT-RELATIONAL"
+      ],
+      "term_ro": "QFP",
+      "definition_ro": "Quantum Folding Point în proiectul actual. Un document recuperat folosește Quantum Field Patterning; identitatea nu se presupune."
+    },
+    {
+      "id": "G-LOCAL",
+      "term": "Local result",
+      "definition": "A relation within a stated neighborhood and ansatz; it does not settle global existence, horizons or dynamical stability.",
+      "branch": "qfp",
+      "source_ids": [
+        "SRC-REPO-01"
+      ],
+      "term_ro": "Rezultat local",
+      "definition_ro": "O relație într-o vecinătate și un ansatz declarate; nu rezolvă existența globală, orizonturile sau stabilitatea dinamică."
+    },
+    {
+      "id": "G-SCALE",
+      "term": "Reference scale",
+      "definition": "A chosen positive scale converts quantities into dimensionless coordinates; the choice does not select a physical mass or prove micro/macro duality.",
+      "branch": "scale",
+      "source_ids": [
+        "SRC-NIST-LOG"
+      ],
+      "term_ro": "Scară de referință",
+      "definition_ro": "O scară pozitivă aleasă definește coordonate adimensionale; nu selectează singură o masă fizică și nu dovedește dualitate micro/macro."
+    }
+  ],
+  "edges": [
+    {
+      "from": "QFP-C001",
+      "to": "QFP-M001",
+      "type": "canonical-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-A002",
+      "to": "QFP-A003",
+      "type": "canonical-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "QFP-DEF001",
+      "to": "QFP-A003",
+      "type": "canonical-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-M001",
+      "to": "QFP-D001",
+      "type": "canonical-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "QFP-C001",
+      "to": "QFP-D001",
+      "type": "canonical-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-NOT001",
+      "to": "QFP-D001",
+      "type": "canonical-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-A003",
+      "to": "QFP-D002",
+      "type": "canonical-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "QFP-NOT001",
+      "to": "QFP-D002",
+      "type": "canonical-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-A003",
+      "to": "QFP-D003",
+      "type": "canonical-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "QFP-C001",
+      "to": "QFP-D003",
+      "type": "canonical-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-A003",
+      "to": "QFP-D004",
+      "type": "canonical-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "QFP-C001",
+      "to": "QFP-D004",
+      "type": "canonical-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-D001",
+      "to": "QFP-D005",
+      "type": "canonical-dependency",
+      "relation_type": "deduction"
+    },
+    {
+      "from": "QFP-D002",
+      "to": "QFP-D005",
+      "type": "canonical-dependency",
+      "relation_type": "deduction"
+    },
+    {
+      "from": "QFP-D003",
+      "to": "QFP-D005",
+      "type": "canonical-dependency",
+      "relation_type": "deduction"
+    },
+    {
+      "from": "QFP-D004",
+      "to": "QFP-D005",
+      "type": "canonical-dependency",
+      "relation_type": "deduction"
+    },
+    {
+      "from": "QFP-S001",
+      "to": "ATLAS-EMBEDDED-OBSERVER",
+      "type": "editorial-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "ATLAS-CURVE-FAMILY",
+      "to": "ATLAS-TUBE-OVERLAP",
+      "type": "editorial-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "ATLAS-TUBE-OVERLAP",
+      "to": "ATLAS-CENTER-UNIQUENESS",
+      "type": "editorial-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "ATLAS-TUBE-OVERLAP",
+      "to": "ATLAS-DENSITY",
+      "type": "editorial-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "ATLAS-DENSITY",
+      "to": "ATLAS-FOLD-CURVATURE",
+      "type": "editorial-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "ATLAS-CURVE-FAMILY",
+      "to": "ATLAS-FOLD-CURVATURE",
+      "type": "editorial-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "ATLAS-TUBE-OVERLAP",
+      "to": "ATLAS-CAUSAL-ORDER",
+      "type": "editorial-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-D005",
+      "to": "ATLAS-GRAVITY-EXTRAPOLATION",
+      "type": "editorial-dependency",
+      "relation_type": "deduction"
+    },
+    {
+      "from": "ATLAS-BEING",
+      "to": "ATLAS-ACCESS",
+      "type": "interpretive-connection",
+      "relation_type": "analogy"
+    },
+    {
+      "from": "ATLAS-INFINITE-SHEET",
+      "to": "ATLAS-EMBEDDED-OBSERVER",
+      "type": "owner-reported-continuity",
+      "relation_type": "proposed relation"
+    },
+    {
+      "from": "ATLAS-EMBEDDED-OBSERVER",
+      "to": "ATLAS-SCALE-POLARITY",
+      "type": "open-research-question",
+      "relation_type": "critique"
+    },
+    {
+      "from": "QFP-C001",
+      "to": "ATLAS-P-TENSOR",
+      "type": "editorial-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-M001",
+      "to": "ATLAS-METRIC-REVIEW",
+      "type": "editorial-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "QFP-C001",
+      "to": "ATLAS-METRIC-REVIEW",
+      "type": "editorial-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-A001",
+      "to": "ATLAS-METRIC-REVIEW",
+      "type": "editorial-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "ATLAS-P-TENSOR",
+      "to": "ATLAS-METRIC-REVIEW",
+      "type": "editorial-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-C001",
+      "to": "ATLAS-REFERENCE-MASS",
+      "type": "editorial-dependency",
+      "relation_type": "definition"
+    },
+    {
+      "from": "QFP-M001",
+      "to": "ATLAS-REFERENCE-MASS",
+      "type": "editorial-dependency",
+      "relation_type": "assumption"
+    },
+    {
+      "from": "QFP-A003",
+      "to": "ATLAS-REFERENCE-MASS",
+      "type": "editorial-dependency",
+      "relation_type": "assumption"
+    }
+  ],
+  "corpus": {
+    "requested_windows": [
+      {
+        "start": "2023-11-11",
+        "end": "2026-11-11",
+        "label": "three-year request"
+      },
+      {
+        "start": "2024-11-11",
+        "end": "2026-11-11",
+        "label": "two-year request"
+      }
+    ],
+    "recovered_conversation_count": 0,
+    "recovered_message_count": 0,
+    "message_date_range": null,
+    "models_known": [],
+    "models_unknown": "All recovered draft generation models and original conversation IDs/timestamps are unknown.",
+    "saved_documents_inspected": 5,
+    "direct_research_drafts": 3,
+    "context_only_candidates": 2,
+    "document_metadata_range": {
+      "start": "2026-04-12",
+      "end": "2026-07-27",
+      "basis": "file creation metadata; earliest candidate has ambiguous acronym identity"
+    },
+    "source_counts": {
+      "canonical_registry_records": 13,
+      "recovered_native_drafts": 4,
+      "recovered_docx_candidate": 1,
+      "owner_summary": 1,
+      "similar_title_topology_copies_metadata_only": 3,
+      "agi_docx_copies_metadata_only": 2
+    },
+    "local_search": {
+      "directories": 372,
+      "entries": 7630,
+      "depth": 2,
+      "errors": 0,
+      "remaining_queue": 0,
+      "match": "No relevant local export, named preview/importer or alternate checkout found within selected roots."
+    },
+    "missing_sources": [
+      "Complete ChatGPT export",
+      "Original 2025-11-18 and 2026-08-14/09-29 messages",
+      "Continuum-Projection_Ontology.pdf",
+      "Original seven-August portfolio",
+      "Original named preview HTML and archive importer"
+    ],
+    "limitations": [
+      "Search was bounded to likely local roots and selected connected-source keywords, not all files or complete cloud history.",
+      "Metadata-only copies were not asserted byte-identical and were not counted as independent research evidence.",
+      "No 2023/2024 conversation coverage established."
+    ]
+  },
+  "questions": [
+    {
+      "id": "QUESTION-CONTINUUM",
+      "branch": "being",
+      "text": "Is the continuum static, generative, or a family of states, and what mathematical object represents it?",
+      "text_ro": "Continuumul este static, generativ sau o familie de stări, și ce obiect matematic îl reprezintă?",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ]
+    },
+    {
+      "id": "QUESTION-PROJECTION",
+      "branch": "projection",
+      "text": "Does projection mean a map, a slice, a coarse-graining, an embedding, or a physical process?",
+      "text_ro": "Proiecția înseamnă o aplicație, o secțiune, o descriere simplificată, o includere sau un proces fizic?",
+      "source_ids": [
+        "owner-mission-2026-11-11",
+        "SRC-MIT-PROJECTION"
+      ]
+    },
+    {
+      "id": "QUESTION-TIME",
+      "branch": "projection",
+      "text": "If the proposed ground is timeless, what parameter describes folding and what would a folding speed mean?",
+      "text_ro": "Dacă fundamentul propus este atemporal, ce parametru descrie plierea și ce ar însemna viteza ei?",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ]
+    },
+    {
+      "id": "QUESTION-ACCESS",
+      "branch": "access",
+      "text": "What set and admissibility relation distinguish ontological totality from the access of a single observer?",
+      "text_ro": "Ce mulțime și ce relație de admisibilitate disting totalitatea ontologică de accesul unui singur observator?",
+      "source_ids": [
+        "owner-mission-2026-11-11"
+      ]
+    },
+    {
+      "id": "QUESTION-PHYSICS",
+      "branch": "qfp",
+      "text": "Which additional equations, boundary data and discriminating observations would connect local consistency to a physical theory?",
+      "text_ro": "Ce ecuații suplimentare, date la frontieră și observații discriminante ar lega consistența locală de o teorie fizică?",
+      "source_ids": [
+        "SRC-ATLAS-MATH-REVIEW"
+      ]
+    }
+  ]
+}

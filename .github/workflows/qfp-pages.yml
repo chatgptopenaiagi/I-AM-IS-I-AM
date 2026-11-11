@@ -1,34 +1,68 @@
-name: Deploy QFP Geometry Laboratory to Pages
+name: Validate and publish I-AM Research Atlas
 
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: atlas-${{ github.event_name }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "26"
+          cache: npm
+      - name: Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - name: Install pinned test dependencies
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          python -m pip install sympy==1.14.0
+          npx playwright install --with-deps chromium
+      - name: Mathematics, provenance and synthetic importer tests
+        run: |
+          npm test
+          python -B -m unittest discover -s SOFTWARE/tests -v
+          python -B -m unittest discover -s archive_tools/tests -v
+          python -B SOFTWARE/validate_atlas_data.py
+          python -B SOFTWARE/qfp_dependency_audit.py
+      - name: Build only reviewed public assets
+        run: npm run build
+      - name: Browser verification at the project base path
+        run: npm run test:browser
+      - name: Upload laboratory artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
   deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload laboratory artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: WEB/qfp-lab
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
