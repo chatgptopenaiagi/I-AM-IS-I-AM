@@ -1,32 +1,642 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Interactive visualization of QFP's derived local regular-center sector.">
-  <title>QFP Interactive Geometry Laboratory v0.1</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
-</head>
-<body>
-<header><div><p class="eyebrow">QFP · LOCAL REGULAR-CENTER SECTOR</p><h1>Interactive Geometry Laboratory <small>v0.1</small></h1></div><p class="mapping">Visualization mapping, not a literal spacetime embedding.</p></header>
-<main>
-  <aside class="panel status-panel" aria-labelledby="status-title">
-    <h2 id="status-title">Scientific Integrity / Status</h2>
-    <section><h3>Object type: WORKING MODEL</h3><p>Scalar-tensor-Gauss-Bonnet action.</p></section>
-    <section><h3>Object type: ANSATZ</h3><p>Static spherical metric; regular-center series.</p></section>
-    <section><h3>Status: DERIVED</h3><p>□Φ(0) = 6Φ₂<br>R(0) = 24m₃ − 12δ₂<br>𝒢(0) = 96m₃(m₃ − δ₂)<br>Central scalar relation.</p></section>
-    <section><h3>Object type: SCHEMA / not validated by this lab</h3><p>Continuum-Projection ontology; C<sub>4D</sub> → Σ<sub>3D</sub>; embedded observer interpretation.</p></section>
-    <section><h3>NOT ESTABLISHED</h3><p>Global solution existence or regularity; stability; observational agreement; experimental confirmation; a physical projection mechanism; QFP as a theory of nature.</p></section>
-    <nav aria-label="Visualization modes"><h2>Visualization mode</h2>
-      <button data-mode="regular" aria-pressed="true">Regular center</button><button data-mode="scalar" aria-pressed="false">Scalar field</button><button data-mode="metric" aria-pressed="false">Metric function</button><button data-mode="curvature" aria-pressed="false">Curvature / invariants</button>
-    </nav>
-  </aside>
-  <section class="viewport" aria-labelledby="viewport-title"><h2 id="viewport-title" class="sr-only">Interactive three-dimensional visual mapping</h2><canvas id="scene"></canvas><p id="webgl-status" role="status">Loading optional WebGL scene. Textual mathematics remains available.</p><div class="legend"><span>Axes and origin r = 0</span><span>Radial shells</span><span>Equation-generated mappings</span></div></section>
-  <aside class="panel controls-panel"><h2>Model / visualization inputs</h2><p class="notice">Inputs are finite visualization/model values, not measured physical parameter estimates. F′(Φ₀), H′(Φ₀), and V′(Φ₀) remain independent.</p><div id="controls"></div><div class="actions"><button id="reset">Reset</button><button id="de-sitter">De Sitter preset</button></div><p id="domain-warning" class="warning" role="alert" hidden>Local-domain warning: N(r) reaches or crosses zero in the displayed interval. The truncated center series should not be interpreted beyond its supported local use.</p>
-    <h2>Live center quantities</h2><div class="cards"><article><span>Status: DERIVED</span><b>R(0)</b><output id="out-r"></output></article><article><span>Status: DERIVED</span><b>𝒢(0)</b><output id="out-gb"></output></article><article><span>Status: DERIVED</span><b>□Φ(0)</b><output id="out-box"></output></article><article class="residual"><span>Mathematical closure diagnostic</span><b>Scalar residual</b><output id="out-residual"></output></article></div><p>Residual = 0 is the local center-equation closure condition, not experimental confirmation.</p><p id="ds-check" aria-live="polite"></p>
-  </aside>
-</main>
-<footer class="panel"><section><h2>Live equations and substitutions</h2><div id="equations-live" class="equations"></div><p><strong>Object type: DEFINITION.</strong> N(r) = 1 − 2m(r)/r. <strong>Object type: ANSATZ.</strong> Displayed functions use the regular-center truncation only.</p></section><section><h2>Scope, provenance, and limitations</h2><p>This laboratory consumes canonical repository results; it does not reproduce their derivation. No particular F(Φ), H(Φ), or V(Φ) is imposed. Surface height, shell radius, opacity, and color are visualization mappings and are not extra physical dimensions, measurements, observations, or literal embeddings.</p><ul><li><a href="../../02_MATHEMATICS/derivations/Regular_Center_Scalar_Reduction.md">Regular-Center Scalar Reduction</a></li><li><a href="../../12_VALIDATION/regularity/Scalar_Regular_Center_Test.md">Scalar Regular-Center Test</a></li><li><a href="../../02_MATHEMATICS/Conventions_and_Notation.md">Conventions and Notation</a></li></ul></section></footer>
-<noscript><p class="warning">JavaScript is disabled. Scientific status, provenance, and canonical equations remain readable, but interactive calculations are unavailable.</p></noscript>
-<script type="module" src="./js/main.js"></script>
-</body></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="I-AM-IS-I-AM: an interactive research atlas. Explore QFP local calculations, geometry, access and scale; inspect assumptions and sources."
+    />
+    <title>I-AM-IS-I-AM · Research Atlas</title>
+    <link rel="stylesheet" href="./atlas.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three/three.module.js",
+          "three/addons/controls/OrbitControls.js": "./vendor/three/OrbitControls.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="skip">Skip to experiments</a>
+    <header class="site-header">
+      <a class="brand" href="./"
+        ><span class="brand-mark" aria-hidden="true">◉</span
+        ><span
+          >I-AM-IS-I-AM<small data-i18n="atlas"
+            >AN INTERACTIVE RESEARCH ATLAS</small
+          ></span
+        ></a
+      >
+      <nav aria-label="Visitor routes" data-label="routes">
+        <button data-route="explore" aria-pressed="true" data-i18n="explore">
+          Explore</button
+        ><button
+          data-route="understand"
+          aria-pressed="false"
+          data-i18n="understand"
+        >
+          Understand</button
+        ><button data-route="examine" aria-pressed="false" data-i18n="examine">
+          Examine
+        </button>
+      </nav>
+      <label class="language"
+        ><span class="sr-only" data-i18n="language">Language</span
+        ><select id="language">
+          <option value="en">EN</option>
+          <option value="ro">RO</option>
+        </select></label
+      >
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div>
+          <p class="eyebrow" data-i18n="author">
+            RESEARCH BY SWAMI CIT ANANDA · OPEN FOR EXAMINATION
+          </p>
+          <h1 data-i18n="hero">
+            A question of being.<br />A place to explore.
+          </h1>
+          <p class="intro" data-i18n="intro">
+            Follow an idea into a model. Change a parameter, examine the result,
+            and trace it back to its assumptions and sources.
+          </p>
+        </div>
+        <aside class="hero-note">
+          <span class="section-number">01—05</span>
+          <p data-i18n="heroNote">
+            Philosophical inquiry, mathematical work, and exploratory
+            hypotheses—connected, with their differences intact.
+          </p>
+          <a href="./geometry.html" data-i18n="original"
+            >Open the original QFP geometry lab ↗</a
+          >
+        </aside>
+      </section>
+      <div
+        id="app-status"
+        class="status-line"
+        role="status"
+        aria-live="polite"
+      ></div>
+      <section
+        id="route-explore"
+        class="route"
+        aria-labelledby="explore-heading"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="handsOn">
+              EXPLORE / CHANGE ONE THING
+            </p>
+            <h2 id="explore-heading" data-i18n="experiments">
+              The experiment table
+            </h2>
+          </div>
+          <div class="toolbar">
+            <button id="reset-all" data-i18n="reset">Reset experiment</button
+            ><button id="share" data-i18n="share">Copy experiment link</button
+            ><button id="export-state" data-i18n="export">Export JSON</button
+            ><button id="import-button" data-i18n="import">Import JSON</button
+            ><input
+              id="import-state"
+              class="sr-only"
+              type="file"
+              accept=".json,application/json"
+            />
+          </div>
+        </div>
+        <nav
+          class="module-nav"
+          aria-label="Experiments"
+          data-label="experiments"
+        >
+          <button data-module="qfp" aria-pressed="true">
+            <span>01</span><b data-i18n="qfp">QFP · Local center</b></button
+          ><button data-module="projection" aria-pressed="false">
+            <span>02</span
+            ><b data-i18n="projection">Projection & slice</b></button
+          ><button data-module="access" aria-pressed="false">
+            <span>03</span
+            ><b data-i18n="access">Access & transitions</b></button
+          ><button data-module="scale" aria-pressed="false">
+            <span>04</span><b data-i18n="scale">Micro / macro scale</b>
+          </button>
+        </nav>
+        <article id="module-qfp" class="experiment">
+          <div class="experiment-heading">
+            <span class="badge" data-i18n="localCalculation"
+              >Local QFP calculation</span
+            >
+            <h3 data-i18n="qfpQuestion">What changes near a regular center?</h3>
+            <p data-i18n="qfpIntro">
+              Adjust the local expansion. The curves and center values come from
+              the repository’s mathematical functions.
+            </p>
+          </div>
+          <div class="experiment-grid">
+            <div class="plot-panel">
+              <div class="plot-top">
+                <span data-i18n="qfpPlot"
+                  >TRUNCATED FUNCTIONS / FINITE RADIAL INTERVAL</span
+                ><select
+                  id="qfp-mode"
+                  aria-label="QFP visualization mode"
+                  data-label="mode"
+                >
+                  <option value="regular" data-i18n="regular">
+                    All functions
+                  </option>
+                  <option value="scalar" data-i18n="scalar">
+                    Scalar field
+                  </option>
+                  <option value="metric" data-i18n="metric">
+                    Metric function
+                  </option>
+                  <option value="curvature" data-i18n="curvature">
+                    Center invariants
+                  </option>
+                </select>
+              </div>
+              <svg
+                id="qfp-plot"
+                viewBox="0 0 720 350"
+                role="img"
+                aria-labelledby="qfp-plot-title qfp-description"
+              >
+                <title id="qfp-plot-title">QFP local expansion graph</title>
+              </svg>
+              <p id="qfp-description" class="plot-description"></p>
+              <div id="qfp-legend" class="legend"></div>
+              <p class="mapping">
+                Visualization mapping, not a literal spacetime embedding.
+              </p>
+              <details id="optional-3d">
+                <summary data-i18n="optional3d">Optional 3D mapping</summary>
+                <button id="load-3d" data-i18n="load3d">
+                  Load local 3D renderer</button
+                ><canvas
+                  id="atlas-scene"
+                  aria-label="Optional illustrative radial shells"
+                ></canvas>
+                <p id="webgl-status" role="status" data-i18n="notLoaded">
+                  Not loaded. All calculations are available above.
+                </p>
+                <p data-i18n="sceneMapping">
+                  Shell radius maps a fraction of the selected interval to a
+                  display radius; vertical scales are arbitrary. Colors separate
+                  quantities. Curvature shells are reference guides, not
+                  isosurfaces.
+                </p>
+              </details>
+            </div>
+            <div class="control-panel">
+              <h4 data-i18n="parameters">Model parameters</h4>
+              <p class="small" data-i18n="unitsNote">
+                Values are dimensionless coefficients in an arbitrary reference
+                mass μ. They are not measured parameter estimates.
+              </p>
+              <div id="qfp-controls"></div>
+              <div class="button-row">
+                <button id="de-sitter" class="primary" data-i18n="deSitter">
+                  De Sitter preset</button
+                ><button id="close-scalar" data-i18n="closeScalar">
+                  Solve center Φ₂
+                </button>
+              </div>
+              <p id="preset-check" role="status"></p>
+              <p id="qfp-warning" class="warning" role="status" hidden></p>
+            </div>
+          </div>
+          <div class="readouts" id="qfp-readouts"></div>
+          <details class="science-details">
+            <summary data-i18n="equationsScope">
+              Equations, dimensions & scope
+            </summary>
+            <div class="details-grid">
+              <div>
+                <p class="equation">
+                  S = ∫ d⁴x √−g [F(Φ)R − ½∇Φ·∇Φ − V(Φ) + αH(Φ)𝒢]
+                </p>
+                <p class="equation">ds² = −e²ᵟN dt² + dr²/N + r²dΩ²</p>
+                <p class="equation">
+                  m = m₃r³ + O(r⁵); δ = δ₀ + δ₂r² + O(r⁴); Φ = Φ₀ + Φ₂r² + O(r⁴)
+                </p>
+                <p class="equation">N = 1 − 2m/r</p>
+                <div id="qfp-equations"></div>
+              </div>
+              <div>
+                <p data-i18n="qfpScope">
+                  Signature (−+++); Ricci contraction Rσν = Rρσρν. F and H
+                  remain independent. This action has no electromagnetic term.
+                  Compactly supported variations justify local bulk equations.
+                  The scalar equation is checked separately from the metric
+                  system.
+                </p>
+                <p data-i18n="localScope">
+                  The displayed polynomial is a local expansion about r = 0. Its
+                  valid finite radius and truncation error have not been
+                  established. A zero of this truncated N is not proof of a
+                  physical horizon. Global existence, asymptotics, stability,
+                  stress-energy regularity and empirical agreement remain open.
+                </p>
+                <p data-i18n="massScale">
+                  With c = ℏ = 1: [r] = M⁻¹, [m₃, δ₂, Λ] = M², [Φ₀, F′] = M,
+                  [Φ₂, V′] = M³, [H′] = M⁻¹. α and δ are dimensionless. Readouts
+                  give R/μ², 𝒢/μ⁴ and scalar terms/μ³.
+                </p>
+                <a
+                  href="https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/6fa0f1f/02_MATHEMATICS/Conventions_and_Notation.md"
+                  data-i18n="conventions"
+                  >Read the exact conventions ↗</a
+                >
+              </div>
+            </div>
+          </details>
+          <div class="source-strip">
+            <span data-i18n="followCalculation">Follow this calculation</span
+            ><button data-claim="QFP-D005">QFP-D005</button
+            ><button data-claim="QFP-D003">R(0)</button
+            ><button data-claim="QFP-D004">𝒢(0)</button
+            ><span data-i18n="closureNote"
+              >Zero residual means scalar center closure, not a solved metric
+              system.</span
+            >
+          </div>
+        </article>
+        <article id="module-projection" class="experiment" hidden>
+          <div class="experiment-heading">
+            <span class="badge" data-i18n="geometry"
+              >Geometry · explanatory model</span
+            >
+            <h3 data-i18n="projectionQuestion">A projection is not a slice.</h3>
+            <p data-i18n="projectionIntro">
+              Start with the solid unit ball x² + y² + z² ≤ 1. Move the cutting
+              plane. Compare the two operations.
+            </p>
+          </div>
+          <div class="experiment-grid">
+            <div class="plot-panel">
+              <svg
+                id="projection-plot"
+                viewBox="0 0 720 360"
+                role="img"
+                aria-labelledby="projection-title projection-description"
+              >
+                <title id="projection-title">
+                  Projection disk and changing cross-section
+                </title>
+              </svg>
+              <p id="projection-description" class="plot-description"></p>
+            </div>
+            <div class="control-panel">
+              <label for="slice" data-i18n="sliceHeight">Slice height s</label
+              ><output id="slice-value" for="slice"></output
+              ><input id="slice" type="range" min="-1.2" max="1.2" step=".01" />
+              <div class="button-row">
+                <button id="slice-center" data-i18n="center">Center</button
+                ><button id="slice-boundary" data-i18n="boundary">
+                  Boundary s = 1</button
+                ><button id="slice-outside" data-i18n="outside">Outside</button>
+              </div>
+              <p class="equation">π(x,y,z) = (x,y)</p>
+              <p class="equation">ρ(s) = √(1 − s²), |s| ≤ 1</p>
+              <p data-i18n="projectionLoss">
+                Projection discards z: (0.3, 0.2, +0.5) and (0.3, 0.2, −0.5)
+                share the same image. The orthographic projection stays the unit
+                disk.
+              </p>
+              <p data-i18n="projectionScope">
+                This is a Euclidean teaching example, not the author’s
+                ontological Continuum or physical time. A rectangular
+                dimension-reducing map cannot be squared as P² = P.
+              </p>
+            </div>
+          </div>
+          <div class="source-strip">
+            <span data-i18n="analogyOnly"
+              >A geometric distinction; no physical projection mechanism is
+              established.</span
+            ><button data-claim="QFP-S001">QFP-S001</button>
+          </div>
+        </article>
+        <article id="module-access" class="experiment" hidden>
+          <div class="experiment-heading">
+            <span class="badge" data-i18n="accessModel"
+              >Philosophical model · explanatory construction</span
+            >
+            <h3 data-i18n="accessQuestion">
+              Seeing more is not moving differently.
+            </h3>
+            <p data-i18n="accessIntro">
+              The model contains every integer. The browser draws a finite
+              window. Its transition law stays T(n) = n + 1.
+            </p>
+          </div>
+          <div class="experiment-grid">
+            <div class="plot-panel">
+              <svg
+                id="access-plot"
+                viewBox="0 0 720 360"
+                role="img"
+                aria-labelledby="access-title access-description"
+              >
+                <title id="access-title">
+                  Finite viewing window on integer states
+                </title>
+              </svg>
+              <p id="access-description" class="plot-description"></p>
+            </div>
+            <div class="control-panel">
+              <p class="eyebrow" data-i18n="modelState">MODEL STATE</p>
+              <p class="big-number">n = <output id="access-n"></output></p>
+              <button id="advance" class="primary" data-i18n="advance">
+                Advance state by +1
+              </button>
+              <hr />
+              <label for="window-center" data-i18n="windowCenter"
+                >Viewing-window center</label
+              ><input
+                id="window-center"
+                type="number"
+                min="-1000000"
+                max="1000000"
+                step="1"
+              /><label for="window-width" data-i18n="windowWidth"
+                >Window half-width</label
+              ><input
+                id="window-width"
+                type="range"
+                min="2"
+                max="10"
+                step="1"
+              /><button id="follow-state" data-i18n="followState">
+                Center window on state
+              </button>
+              <p data-i18n="accessLaw">
+                An infinite state set can still have exactly one successor at
+                every state. A wider view changes neither the state nor the
+                transition law.
+              </p>
+            </div>
+          </div>
+          <div class="quantifiers">
+            <div>
+              <strong>∀ address ∃ observer</strong>
+              <p data-i18n="quantifierSome">
+                For each address, some observer can access it. The observer may
+                differ at each address.
+              </p>
+            </div>
+            <div>
+              <strong>∃ observer ∀ address</strong>
+              <p data-i18n="quantifierOne">
+                One observer can access every address. This stronger statement
+                does not follow from the first.
+              </p>
+            </div>
+          </div>
+          <p class="experiment-foot" data-i18n="accessScope">
+            The access rule here is membership in a finite interval. It is not a
+            measurement of consciousness.
+          </p>
+        </article>
+        <article id="module-scale" class="experiment" hidden>
+          <div class="experiment-heading">
+            <span class="badge" data-i18n="scaleModel"
+              >Geometry · logarithmic illustration</span
+            >
+            <h3 data-i18n="scaleQuestion">
+              Reflect a scale around a reference.
+            </h3>
+            <p data-i18n="scaleIntro">
+              A chosen logarithmic map relates smaller and larger positive
+              lengths. It does not turn finite endpoints into infinity.
+            </p>
+          </div>
+          <div class="experiment-grid">
+            <div class="plot-panel">
+              <svg
+                id="scale-plot"
+                viewBox="0 0 720 360"
+                role="img"
+                aria-labelledby="scale-title scale-description"
+              >
+                <title id="scale-title">
+                  Logarithmic length and its reflected partner
+                </title>
+              </svg>
+              <p id="scale-description" class="plot-description"></p>
+            </div>
+            <div class="control-panel">
+              <label for="scale-q">q = log₁₀(ℓ / ℓ₀)</label
+              ><output id="q-value" for="scale-q"></output
+              ><input
+                id="scale-q"
+                type="range"
+                min="-12"
+                max="12"
+                step=".1"
+              /><label for="reference-length" data-i18n="referenceLength"
+                >Reference length ℓ₀ (metres)</label
+              ><input
+                id="reference-length"
+                type="number"
+                min=".000000001"
+                max="1000000000"
+                step="any"
+              /><button id="reflect" class="primary" data-i18n="reflect">
+                Reflect q → −q
+              </button>
+              <p class="equation">ℓ(q) = ℓ₀ · 10ᑫ</p>
+              <p class="equation">ℓ(q) · ℓ(−q) = ℓ₀²</p>
+              <p id="scale-values"></p>
+              <p data-i18n="scaleScope">
+                q = 0 means ℓ = ℓ₀. It is not zero kelvin, a vacuum, zero
+                energy, or an absolute ground. Negative q is a smaller positive
+                length.
+              </p>
+              <p data-i18n="scaleLimit">
+                Slider bounds: −12 ≤ q ≤ 12; 10⁻⁹ ≤ ℓ₀ ≤ 10⁹ m. Arrows indicate
+                mathematical continuation, not reachable infinity. No physical
+                filament mechanism is implemented.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section
+        id="route-understand"
+        class="route"
+        hidden
+        aria-labelledby="understand-heading"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="ideasHistory">
+              UNDERSTAND / IDEAS IN DEVELOPMENT
+            </p>
+            <h2 id="understand-heading" data-i18n="historyHeading">
+              A living research record
+            </h2>
+          </div>
+        </div>
+        <p class="lead" data-i18n="historyIntro">
+          I-AM begins with a philosophical inquiry into being and first-person
+          presence. QFP develops a distinct mathematical branch. The atlas keeps
+          definitions, proposals and calculations visible in their own terms.
+        </p>
+        <div id="branch-cards" class="branch-cards"></div>
+        <section class="content-card">
+          <div class="section-heading">
+            <h3 data-i18n="timeline">Intellectual timeline</h3>
+            <label
+              ><span data-i18n="view">View</span>
+              <select id="timeline-window">
+                <option value="3" data-i18n="threeYears">
+                  11 Nov 2023–11 Nov 2026
+                </option>
+                <option value="2" data-i18n="twoYears">
+                  11 Nov 2024–11 Nov 2026
+                </option>
+              </select></label
+            >
+          </div>
+          <p class="small" data-i18n="dateCaution">
+            Document dates, recovered message dates, Git dates and
+            owner-reported events are different kinds of evidence. An empty
+            period does not show that no work took place.
+          </p>
+          <ol id="timeline-list" class="timeline"></ol>
+        </section>
+        <section class="content-card">
+          <h3 data-i18n="glossary">A working glossary</h3>
+          <dl id="glossary" class="glossary"></dl>
+        </section>
+        <section class="content-card">
+          <h3 data-i18n="openQuestions">Questions kept open</h3>
+          <ul id="open-questions"></ul>
+          <p data-i18n="traditions">
+            Advaita, Ajata, Kashmir Shaivism, Buddhism and Biblical
+            self-reference are not interchangeable traditions. This atlas does
+            not claim their agreement with each other or with physical theories.
+          </p>
+        </section>
+        <section class="content-card">
+          <h3 data-i18n="coverage">What was recovered?</h3>
+          <div id="corpus-summary"></div>
+          <a
+            href="https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/tree/e753c6d5b0c28066bb12a3e2f0c2d4f86a16c751/archive_tools"
+            data-i18n="importerLink"
+            >Local archive importer and coverage method ↗</a
+          >
+        </section>
+      </section>
+      <section
+        id="route-examine"
+        class="route"
+        hidden
+        aria-labelledby="examine-heading"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="claimsSources">
+              EXAMINE / CLAIMS & SOURCES
+            </p>
+            <h2 id="examine-heading" data-i18n="claimHeading">
+              Follow the reasoning.
+            </h2>
+          </div>
+        </div>
+        <p class="lead" data-i18n="claimIntro">
+          A source records a statement. It does not establish that the statement
+          is true. Open a record to examine its scope, assumptions, provenance
+          and dependencies.
+        </p>
+        <div class="filters">
+          <label
+            ><span data-i18n="search">Search</span
+            ><input id="claim-search" type="search" maxlength="160" /></label
+          ><label
+            ><span data-i18n="branch">Branch</span
+            ><select id="branch-filter">
+              <option value="" data-i18n="all">All</option>
+            </select></label
+          ><label
+            ><span data-i18n="status">Type / status</span
+            ><select id="status-filter">
+              <option value="" data-i18n="all">All</option>
+            </select></label
+          ><label
+            ><span data-i18n="sourceType">Source type</span
+            ><select id="source-filter">
+              <option value="" data-i18n="all">All</option>
+            </select></label
+          ><label
+            ><span data-i18n="fromDate">From date</span
+            ><input id="date-filter" type="date"
+          /></label>
+        </div>
+        <p id="claim-count" role="status"></p>
+        <div id="claim-list" class="claim-list"></div>
+        <section class="content-card">
+          <h3 data-i18n="dependencyHeading">What needs rechecking?</h3>
+          <p data-i18n="dependencyIntro">
+            Select an assumption or result. The highlighted downstream records
+            need a new audit if it changes; their recorded epistemic status
+            stays unchanged.
+          </p>
+          <label for="impact-select" data-i18n="changedObject"
+            >Changed scientific object</label
+          ><select id="impact-select"></select>
+          <div id="impact-results"></div>
+          <div id="dependency-edges" class="edge-list"></div>
+        </section>
+        <section class="content-card">
+          <h3 data-i18n="sourceRegister">Source register</h3>
+          <div id="source-list"></div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <strong>I-AM-IS-I-AM</strong>
+        <p data-i18n="footerNote">
+          A research program to examine, not a promise of scientific acceptance.
+        </p>
+      </div>
+      <a
+        href="https://github.com/chatgptopenaiagi/I-AM-IS-I-AM"
+        data-i18n="repository"
+        >Source repository ↗</a
+      ><span>Atlas v0.2 · 2026</span>
+    </footer>
+    <dialog id="claim-dialog" aria-labelledby="claim-title">
+      <div class="dialog-top">
+        <span class="eyebrow" id="claim-id"></span
+        ><button id="close-claim" data-i18n="close">Close</button>
+      </div>
+      <h2 id="claim-title"></h2>
+      <div id="claim-detail"></div>
+      <button id="export-claim" class="primary" data-i18n="exportClaim">
+        Export this public record
+      </button>
+    </dialog>
+    <noscript
+      ><div class="content-card">
+        <h2>JavaScript is disabled</h2>
+        <p>
+          The action, local-series assumptions and explanations above remain
+          readable. Interactive calculations need JavaScript. The
+          <a href="https://github.com/chatgptopenaiagi/I-AM-IS-I-AM"
+            >repository</a
+          >
+          contains the canonical derivations and reproducible tests.
+        </p>
+      </div></noscript
+    >
+    <script type="module" src="./js/atlas.js"></script>
+  </body>
+</html>

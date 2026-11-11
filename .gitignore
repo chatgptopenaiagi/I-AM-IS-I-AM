@@ -221,3 +221,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Atlas tooling and private research material
+node_modules/
+test-results/
+playwright-report/
+.private/
+private-corpus/
+conversations.json
+chat.html

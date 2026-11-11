@@ -18,7 +18,7 @@ function render(state) {
   const localWarning = hasNZeroCrossing(state.m3, state.rMax);
   document.querySelector('#domain-warning').hidden = !localWarning;
   const check = deSitterCheck(state, 1e-10), checkEl = document.querySelector('#ds-check');
-  checkEl.textContent = presetActive ? `DE SITTER CHECK: ${check.pass ? 'PASS' : 'FAIL'} — calculated R₀ ${fmt(check.actual.R0)} vs 4Λ ${fmt(check.expected.R0)}; calculated 𝒢₀ ${fmt(check.actual.GB0)} vs 8Λ²/3 ${fmt(check.expected.GB0)} (relative tolerance 1e−10).` : 'De Sitter check inactive. Apply the preset to set δ₂ = 0 and m₃ = Λ/6.';
+  checkEl.textContent = presetActive ? `CONSTANT-CURVATURE CHECK: ${check.pass ? 'PASS' : 'FAIL'} — calculated R₀ ${fmt(check.actual.R0)} vs 4Λ ${fmt(check.expected.R0)}; calculated 𝒢₀ ${fmt(check.actual.GB0)} vs 8Λ²/3 ${fmt(check.expected.GB0)} (mixed absolute/relative tolerance 1e−10).` : 'De Sitter check inactive. Apply the preset to set δ₂ = 0 and m₃ = Λ/6.';
   checkEl.className = presetActive ? (check.pass ? 'pass' : 'fail') : '';
   scene?.update(state, mode);
 }

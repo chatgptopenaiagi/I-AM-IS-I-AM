@@ -1,0 +1,19 @@
+{
+  "name": "i-am-is-i-am-research-atlas",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test WEB/qfp-lab/tests/*.test.mjs",
+    "test:browser": "playwright test",
+    "serve": "node SOFTWARE/serve-atlas.mjs",
+    "build": "node SOFTWARE/build-atlas.mjs"
+  },
+  "dependencies": {
+    "three": "0.160.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "prettier": "3.6.2"
+  }
+}
