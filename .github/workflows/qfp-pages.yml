@@ -16,7 +16,10 @@ concurrency:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      ATLAS_BROWSER_CHANNEL: chrome
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -33,11 +36,13 @@ jobs:
         with:
           python-version: "3.14"
       - name: Install pinned test dependencies
+        timeout-minutes: 5
         run: |
           npm ci --ignore-scripts --no-audit --no-fund
           python -m pip install sympy==1.14.0
-          npx playwright install --with-deps chromium
+          google-chrome --version
       - name: Install isolated Triad service dependencies
+        timeout-minutes: 5
         run: |
           npm ci --prefix services/mcp --ignore-scripts --no-audit --no-fund
           python -m venv services/microsoft/.venv
@@ -68,6 +73,7 @@ jobs:
         with:
           path: dist
   deploy:
+    timeout-minutes: 10
     if: github.event_name != 'pull_request'
     needs: validate
     permissions:

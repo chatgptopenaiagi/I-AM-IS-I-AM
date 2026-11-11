@@ -18,7 +18,7 @@ test('actual MCP App bridge renders and invokes real SDK tools in Chromium',{tim
     const bundle=await build({entryPoints:[fileURLToPath(new URL('./ui-host.js',import.meta.url))],bundle:true,format:'esm',platform:'browser',write:false});
     const html='<!doctype html><html><body><iframe id="lab" title="TRIAD research lab" sandbox="allow-scripts" style="width:100%;height:900px;border:0"></iframe><script type="module">'+bundle.outputFiles[0].text.replace(/<\/script/gi,'<\\/script')+'</script></body></html>';
     host=createServer((req,res)=>{res.setHeader('content-type','text/html');res.end(html);});await new Promise(r=>host.listen(0,'127.0.0.1',r));
-    browser=await chromium.launch({headless:true,...(process.platform==='win32'?{channel:'chrome'}:{})});
+    browser=await chromium.launch({headless:true,...(process.env.ATLAS_BROWSER_CHANNEL?{channel:process.env.ATLAS_BROWSER_CHANNEL}:process.platform==='win32'?{channel:'chrome'}:{})});
     const page=await browser.newPage({viewport:{width:980,height:1100}});const errors=[];
     page.on('pageerror',e=>errors.push(e.message));
     await page.exposeFunction('testToolCall',params=>client.callTool(params));

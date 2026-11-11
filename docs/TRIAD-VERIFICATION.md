@@ -1,5 +1,7 @@
 # Triad local verification record
 
+CI setup note: the first [PR run](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/runs/43036487158) was cancelled after over seven minutes of setup. Its log shows repeated Ubuntu archive timeouts while installing optional browser fonts, before any tests. The workflow now pins `ubuntu-24.04`, uses its preinstalled Chrome through `ATLAS_BROWSER_CHANNEL=chrome`, and bounds setup steps to five minutes and validation to fifteen. The [official runner inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) documents the installed browser. This changes the browser provisioning path, not the tests or their acceptance criteria; the replacement hosted run still needs observation.
+
 **Date:** 2026-11-11. **Scope:** the completed local TriadResearchEngine validation on `codex/triad-research-engine`, based on repository commit `8c9308c` (`Merge pull request #2 from chatgptopenaiagi/codex/atlas-publication-record`). The final built browser bundle passed after the mobile/layout and presentation corrections. Hosted CI and deployment remain pending; this is not a deployment record.
 
 The previous atlas's [verification record](VERIFICATION.md) remains historical evidence for that implementation. Its passing counts are not automatically evidence for newly added Triad behavior. Tests being present in the worktree also do not establish that they ran.
