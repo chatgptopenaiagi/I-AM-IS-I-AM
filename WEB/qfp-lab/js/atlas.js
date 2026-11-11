@@ -655,7 +655,7 @@ function safeLink(source) {
   const url =
     source.url ||
     (source.path
-      ? `https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/codex/interactive-research-atlas/${source.path}`
+      ? `https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/blob/e753c6d5b0c28066bb12a3e2f0c2d4f86a16c751/${source.path}`
       : null);
   if (!url) return null;
   try {

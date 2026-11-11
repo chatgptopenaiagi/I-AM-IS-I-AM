@@ -6,6 +6,8 @@ The **interactive research atlas** gives this record three entry points: **Explo
 
 Research program: **Swami CIT Ananda / `chatgptopenaiagi`**. Individual sources retain their own provenance; this credit does not assign unknown authors, speaker roles or generating models to recovered documents.
 
+**[Open the research atlas](https://chatgptopenaiagi.github.io/I-AM-IS-I-AM/)** · [Deployment status](https://github.com/chatgptopenaiagi/I-AM-IS-I-AM/actions/workflows/qfp-pages.yml)
+
 ![Research atlas desktop interface](assets/atlas-desktop.png)
 
 [Research atlas](01_THEORY/Research_Atlas.md) · [Source register](10_REFERENCES/Atlas_Sources.md) · [Corpus coverage](10_REFERENCES/Corpus_Coverage.md) · [Mathematical review](12_VALIDATION/Atlas_Mathematical_Review.md) · [Verification](docs/VERIFICATION.md) · [Contributing](docs/CONTRIBUTING.md)
